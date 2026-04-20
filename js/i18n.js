@@ -9,10 +9,11 @@
             "hero.description": "All Mighty Sync je moderno rješenje za privatne škole i klubove koji žele povećati produktivnost i imati potpunu kontrolu nad svojim aktivnostima - sve iz jedne aplikacije.",
             "hero.comingSoon": "USKORO NA:",
 
-            "store.google.small": "GET IT ON",
+            "store.google.small": "Preuzmi na",
             "store.google.big": "Google Play",
-            "store.apple.small": "Download on the",
+            "store.apple.small": "Preuzmi na",
             "store.apple.big": "App Store",
+            "store.tooltip": "Ili se prijavite za demo",
 
             "about.title": "O NAMA",
             "about.p1": "All Mighty Sync je digitalna platforma koja pojednostavljuje upravljanje privatnim školama i klubovima - od komunikacije i rasporeda do evidencije i administracije. Umjesto više nepovezanih alata, sve se nalazi na jednom mjestu, jasno i pregledno.",
@@ -45,12 +46,13 @@
             "hero.title": 'Sport, art and education - <span class="accent">finally connected.</span>',
             "hero.subtitle": "Manage attendance, materials and teams quickly and easily.",
             "hero.description": "All Mighty Sync is a modern solution for private schools and clubs that want to increase productivity and have full control over their activities - all in one app.",
-            "hero.comingSoon": "COMING SOON TO:",
+            "hero.comingSoon": "COMING SOON:",
 
-            "store.google.small": "GET IT ON",
+            "store.google.small": "Download via",
             "store.google.big": "Google Play",
-            "store.apple.small": "Download on the",
+            "store.apple.small": "Download via",
             "store.apple.big": "App Store",
+            "store.tooltip": "Or sign up for a demo",
 
             "about.title": "ABOUT US",
             "about.p1": "All Mighty Sync is a digital platform that simplifies the management of private schools and clubs - from communication and schedules to records and administration. Instead of multiple disconnected tools, everything is in one place, clear and easy to manage.",
@@ -85,10 +87,11 @@
             "hero.description": "All Mighty Sync ist eine moderne Lösung für private Schulen und Clubs, die ihre Produktivität steigern und die volle Kontrolle über ihre Aktivitäten haben möchten - alles in einer App.",
             "hero.comingSoon": "BALD VERFÜGBAR AUF:",
 
-            "store.google.small": "JETZT BEI",
+            "store.google.small": "Laden im",
             "store.google.big": "Google Play",
             "store.apple.small": "Laden im",
             "store.apple.big": "App Store",
+            "store.tooltip": "Oder melden Sie sich für eine Demo an",
 
             "about.title": "ÜBER UNS",
             "about.p1": "All Mighty Sync ist eine digitale Plattform, die die Verwaltung privater Schulen und Clubs vereinfacht - von Kommunikation und Terminplänen bis hin zu Anwesenheit und Administration. Statt mehrerer getrennter Tools befindet sich alles an einem Ort, klar und übersichtlich.",

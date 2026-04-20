@@ -123,4 +123,61 @@
       updateSubmitButtonLabel();
     }
   });
+
+  /* Store button tooltip behavior */
+  const storeButtons = document.querySelectorAll(".store-btn");
+  let activeTooltip = null;
+  let hideTimer = null;
+
+  function closeAllTooltips() {
+    storeButtons.forEach((btn) => btn.classList.remove("tooltip-open"));
+    activeTooltip = null;
+
+    if (hideTimer) {
+      clearTimeout(hideTimer);
+      hideTimer = null;
+    }
+  }
+
+  storeButtons.forEach((btn) => {
+    btn.addEventListener("click", function (e) {
+      const tooltip = btn.querySelector(".store-tooltip");
+      if (!tooltip) return;
+
+      const clickedTooltip = e.target.closest(".store-tooltip");
+
+      if (clickedTooltip) {
+        return;
+      }
+
+      e.preventDefault();
+
+      const isOpen = btn.classList.contains("tooltip-open");
+      closeAllTooltips();
+
+      if (!isOpen) {
+        btn.classList.add("tooltip-open");
+        activeTooltip = btn;
+
+        hideTimer = setTimeout(() => {
+          if (activeTooltip === btn) {
+            btn.classList.remove("tooltip-open");
+            activeTooltip = null;
+          }
+        }, 2500);
+      }
+    });
+  });
+
+  document.addEventListener("click", function (e) {
+    if (!e.target.closest(".store-btn")) {
+      closeAllTooltips();
+    }
+  });
+
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape") {
+      closeAllTooltips();
+    }
+  });
 })();

@@ -186,9 +186,11 @@ img { max-width: 100%; display: block; }
   display: flex;
   gap: 14px;
   flex-wrap: wrap;
+  align-items: flex-start;
 }
 
 .store-btn {
+  position: relative;
   display: inline-flex;
   align-items: center;
   gap: 10px;
@@ -199,11 +201,13 @@ img { max-width: 100%; display: block; }
   text-decoration: none;
   font-weight: 600;
   transition: transform 0.2s, background 0.2s, opacity 0.2s;
+  z-index: 1;
 }
 
 .store-btn:hover {
   transform: translateY(-2px);
   background: #1a1a1a;
+  z-index: 5;
 }
 
 .store-btn.is-disabled {
@@ -212,7 +216,6 @@ img { max-width: 100%; display: block; }
 }
 
 .store-btn.is-disabled:hover {
-  transform: none;
   background: #000;
 }
 
@@ -232,6 +235,77 @@ img { max-width: 100%; display: block; }
 .store-btn .big {
   font-size: 16px;
   line-height: 1.1;
+}
+
+/* narrower hover bridge */
+.store-btn::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 100%;
+  transform: translateX(-50%);
+  width: 70px;
+  height: 14px;
+}
+
+.store-tooltip {
+  position: absolute;
+  left: 50%;
+  bottom: calc(100% + 10px);
+  transform: translateX(-50%) translateY(6px);
+  background: #111;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 12px;
+  line-height: 1.3;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s ease, background 0.2s ease;
+  text-decoration: none;
+  z-index: 20;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.18);
+}
+
+.store-tooltip::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 6px;
+  border-style: solid;
+  border-color: #111 transparent transparent transparent;
+}
+
+.store-btn:hover .store-tooltip,
+.store-tooltip:hover,
+.store-btn.tooltip-open .store-tooltip {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+  pointer-events: auto;
+}
+
+.store-tooltip:hover {
+  background: var(--brand-orange);
+}
+
+.store-tooltip:hover::after {
+  border-color: var(--brand-orange) transparent transparent transparent;
+}
+
+@media (max-width: 600px) {
+  .store-tooltip {
+    white-space: normal;
+    width: max-content;
+    max-width: 220px;
+    text-align: center;
+    font-size: 11px;
+    padding: 8px 10px;
+  }
 }
 
 /* ========== About ========== */
