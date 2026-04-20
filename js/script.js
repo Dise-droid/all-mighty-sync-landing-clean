@@ -9,6 +9,44 @@
       form.querySelector('button[type="submit"]') || form.querySelector("button");
   const messageEl = form.querySelector(".form-message");
 
+  function getCurrentLang() {
+    return localStorage.getItem("amsync-lang") || "bs";
+  }
+
+  function getUiText(lang) {
+    const texts = {
+      bs: {
+        sending: "ŠALJEM...",
+        submit: "POŠALJI",
+        success: "Hvala! Vaša poruka je uspješno poslana.",
+        error: "Greška pri slanju poruke. Pokušajte ponovo."
+      },
+      en: {
+        sending: "SENDING...",
+        submit: "SEND",
+        success: "Thank you! Your message has been sent successfully.",
+        error: "An error occurred while sending the message. Please try again."
+      },
+      de: {
+        sending: "WIRD GESENDET...",
+        submit: "SENDEN",
+        success: "Danke! Ihre Nachricht wurde erfolgreich gesendet.",
+        error: "Beim Senden der Nachricht ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut."
+      }
+    };
+
+    return texts[lang] || texts.bs;
+  }
+
+  function updateSubmitButtonLabel() {
+    const lang = getCurrentLang();
+    const ui = getUiText(lang);
+
+    if (!submitBtn.disabled) {
+      submitBtn.textContent = ui.submit;
+    }
+  }
+
   function showMessage(type, text) {
     if (!messageEl) {
       alert(text);
@@ -24,6 +62,14 @@
     messageEl.textContent = "";
   }
 
+  updateSubmitButtonLabel();
+
+  document.querySelectorAll(".lang-btn").forEach((btn) => {
+    btn.addEventListener("click", function () {
+      setTimeout(updateSubmitButtonLabel, 0);
+    });
+  });
+
   form.addEventListener("submit", async function (e) {
     e.preventDefault();
     clearMessage();
@@ -36,8 +82,11 @@
       poruka: (formData.get("poruka") || "").toString().trim(),
     };
 
+    const lang = getCurrentLang();
+    const ui = getUiText(lang);
+
     submitBtn.disabled = true;
-    submitBtn.textContent = "ŠALJEM...";
+    submitBtn.textContent = ui.sending;
 
     try {
       const res = await fetch(SUPABASE_URL, {
@@ -61,17 +110,17 @@
         );
       }
 
-      showMessage("success", "Hvala! Vaša poruka je uspješno poslana.");
+      showMessage("success", ui.success);
       form.reset();
     } catch (err) {
       console.error("Contact form error:", err);
       showMessage(
           "error",
-          (err && err.message) || "Greška pri slanju poruke. Pokušajte ponovo."
+          (err && err.message) || ui.error
       );
     } finally {
       submitBtn.disabled = false;
-      submitBtn.textContent = "POŠALJI";
+      updateSubmitButtonLabel();
     }
   });
 })();
