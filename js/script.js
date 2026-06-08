@@ -1,6 +1,6 @@
 (function () {
-  const SUPABASE_URL = "https://piacdaivqfdmwqjpttsj.supabase.co/functions/v1/contact";
-  const SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InBpYWNkYWl2cWZkbXdxanB0dHNqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzY0MTE3ODEsImV4cCI6MjA5MTk4Nzc4MX0.mq4gWz7Cc1GnloJzNL6CXE-6L2uno85UPEWW15TlGC4";
+  const WEB3FORMS_URL = "https://api.web3forms.com/submit";
+  const ACCESS_KEY = "2b7f38f6-464b-4bc6-8e69-cf667334864d";
 
   const form = document.getElementById("contactForm");
   if (!form) return;
@@ -89,14 +89,16 @@
     submitBtn.textContent = ui.sending;
 
     try {
-      const res = await fetch(SUPABASE_URL, {
+      const res = await fetch(WEB3FORMS_URL, {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          apikey: SUPABASE_ANON_KEY,
-          Authorization: "Bearer " + SUPABASE_ANON_KEY,
-        },
-        body: JSON.stringify(payload),
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          access_key: ACCESS_KEY,
+          subject: "Nova poruka - All Mighty Sync",
+          name: (payload.ime + " " + payload.prezime).trim(),
+          email: payload.email,
+          message: payload.poruka,
+        }),
       });
 
       let data = null;

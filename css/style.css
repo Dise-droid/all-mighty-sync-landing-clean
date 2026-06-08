@@ -310,7 +310,7 @@ img { max-width: 100%; display: block; }
 
 /* ========== About ========== */
 .about {
-  padding: 40px 0 60px;
+  padding: 40px 0 40px;
 }
 
 .about .container {
@@ -321,8 +321,8 @@ img { max-width: 100%; display: block; }
 }
 
 .about h2 {
-  font-size: clamp(32px, 4vw, 44px);
-  font-weight: 800;
+  font-size: clamp(28px, 4vw, 40px);
+  font-weight: 500;
   color: var(--brand-orange);
   margin-bottom: 20px;
   letter-spacing: 1px;

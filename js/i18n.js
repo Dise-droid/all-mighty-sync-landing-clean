@@ -4,7 +4,7 @@
             "nav.about": "O NAMA",
             "nav.contact": "KONTAKT",
 
-            "hero.title": 'Sport, umjetnost i edukacija - <span class="accent">napokon povezani.</span>',
+            "hero.title": 'SPORT, UMJETNOST I EDUKACIJA NAPOKON POVEZANI.<span class="accent"> Instaliraj aplikaciju i vodi vannastavne aktivnosti bez komplikacija.</span>',
             "hero.subtitle": "Upravljajte prisustvom, materijalima i timovima brzo i jednostavno.",
             "hero.description": "All Mighty Sync je moderno rješenje za privatne škole i klubove koji žele povećati produktivnost i imati potpunu kontrolu nad svojim aktivnostima - sve iz jedne aplikacije.",
             "hero.comingSoon": "USKORO NA:",
