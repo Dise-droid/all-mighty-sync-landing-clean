@@ -566,8 +566,15 @@ img { max-width: 100%; display: block; }
   display: block;
 }
 
+#inconvenience-store-logo {
+  overflow: hidden;
+}
+
 #inconvenience-store-logo img {
-  height: 100px;
+  height: 240px;
+  width: auto;
+  margin-top: -80px;
+  margin-bottom: -80px;
 }
 
 .partner-logo-light {
