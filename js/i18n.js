@@ -36,6 +36,7 @@
             "form.message": "Vaša poruka...",
             "form.submit": "POŠALJI",
 
+            "footer.supportedBy": "Podržani od",
             "footer.copyright": "© 2026 All Mighty Sync. Sva prava zadržana."
         },
 
@@ -75,6 +76,7 @@
             "form.message": "Your message...",
             "form.submit": "SEND",
 
+            "footer.supportedBy": "Supported by",
             "footer.copyright": "© 2026 All Mighty Sync. All rights reserved."
         },
 
@@ -114,6 +116,7 @@
             "form.message": "Ihre Nachricht...",
             "form.submit": "SENDEN",
 
+            "footer.supportedBy": "Unterstützt von",
             "footer.copyright": "© 2026 All Mighty Sync. Alle Rechte vorbehalten."
         }
     };

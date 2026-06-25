@@ -566,6 +566,40 @@ img { max-width: 100%; display: block; }
   display: block;
 }
 
+.partner-logo-light {
+  background: #fff;
+  padding: 12px 22px;
+  border-radius: 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+
+.partner-logo-light img {
+  height: 56px;
+  width: auto;
+  display: block;
+}
+
+.partners-label {
+  text-align: center;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 20px;
+}
+
+.partner-name-text {
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+}
+
 .copyright {
   text-align: center;
   margin-top: 24px;
