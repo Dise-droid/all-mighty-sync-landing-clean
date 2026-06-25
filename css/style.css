@@ -566,6 +566,10 @@ img { max-width: 100%; display: block; }
   display: block;
 }
 
+#inconvenience-store-logo img {
+  height: 100px;
+}
+
 .partner-logo-light {
   background: #fff;
   padding: 12px 22px;
