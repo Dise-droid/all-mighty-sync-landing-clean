@@ -32,7 +32,7 @@
             "problem.tool6": "Aplikacija Kalendara",
             "problem.tool7": "Ručni Računi",
             "problem.converge": "sve završi na jednom stolu",
-            "problem.body": "Kada su vaše grupe na WhatsAppu, finansije u Excelu, prisustvo na papiru, a komunikacija rasuta po pet platformi - stvari propadaju svake sedmice. Nastavnici gube vrijeme. Roditelji ostaju neinformirani. I sav administrativni teret pada na osobu koja bi trebala biti fokusirana na izgradnju organizacije.",
+            "problem.body": "Najveći trošak jedne organizacije nije papir. Nije ni Excel. To je vrijeme koje svaki dan odlazi na koordinaciju. Kada su rasporedi, komunikacija, prisustvo i finansije razdvojeni između različitih alata, administracija postaje svakodnevni posao koji oduzima fokus od onoga što je zaista važno - rada s djecom, učenicima i zajednicom.",
 
             "timeline.label": "DAN U ŽIVOTU",
             "timeline.heading": "Tipičan dan s All Mighty Sync",
@@ -347,7 +347,7 @@
             "problem.tool6": "Calendar App",
             "problem.tool7": "Manual Invoices",
             "problem.converge": "all land on one desk",
-            "problem.body": "When your group management lives in WhatsApp, your finances in Excel, your attendance on paper, and your communication across five platforms, things fall through the cracks - every week. Your teachers lose time. Your parents stay uninformed. And the administrative burden lands entirely on the person who should be focused on building the organization.",
+            "problem.body": "The biggest cost to an organization is not paper. It is not Excel either. It is the time that leaves every day through coordination. When schedules, communication, attendance and finances are split across different tools, administration becomes a daily job that takes focus away from what truly matters - working with children, students and the community.",
 
             "timeline.label": "A DAY IN THE LIFE",
             "timeline.heading": "A typical day with All Mighty Sync",
@@ -662,7 +662,7 @@
             "problem.tool6": "Kalender-App",
             "problem.tool7": "Manuelle Rechnungen",
             "problem.converge": "alles landet auf einem Schreibtisch",
-            "problem.body": "Wenn Ihre Gruppenverwaltung auf WhatsApp läuft, Ihre Finanzen in Excel, die Anwesenheit auf Papier und die Kommunikation über fünf Plattformen verteilt ist, fallen jede Woche Dinge durch die Ritzen. Ihre Lehrer verlieren Zeit. Eltern bleiben uninformiert. Und der Verwaltungsaufwand liegt bei der Person, die eigentlich am Aufbau der Organisation arbeiten sollte.",
+            "problem.body": "Der größte Kostenfaktor einer Organisation ist nicht das Papier. Auch nicht Excel. Es ist die Zeit, die jeden Tag durch Koordination verloren geht. Wenn Stundenpläne, Kommunikation, Anwesenheit und Finanzen auf verschiedene Tools aufgeteilt sind, wird die Verwaltung zur täglichen Aufgabe, die den Fokus von dem ablenkt, was wirklich wichtig ist - die Arbeit mit Kindern, Schülern und der Gemeinschaft.",
 
             "timeline.label": "EIN TAG IM LEBEN",
             "timeline.heading": "Ein typischer Tag mit All Mighty Sync",
