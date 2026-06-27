@@ -1,4 +1,60 @@
 (function () {
+
+  /* ===== FAQ ACCORDION ===== */
+  document.querySelectorAll(".faq-q").forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      const item = btn.closest(".faq-item");
+      const answer = item.querySelector(".faq-a");
+      const icon = btn.querySelector(".faq-icon");
+      const isOpen = btn.getAttribute("aria-expanded") === "true";
+
+      document.querySelectorAll(".faq-q").forEach(function (other) {
+        if (other !== btn) {
+          other.setAttribute("aria-expanded", "false");
+          other.closest(".faq-item").querySelector(".faq-a").classList.remove("is-open");
+          const otherIcon = other.querySelector(".faq-icon");
+          if (otherIcon) otherIcon.textContent = "+";
+        }
+      });
+
+      btn.setAttribute("aria-expanded", String(!isOpen));
+      answer.classList.toggle("is-open", !isOpen);
+      if (icon) icon.textContent = isOpen ? "+" : "−";
+    });
+  });
+
+  /* ===== DISCIPLINE TABS ===== */
+  document.querySelectorAll(".disc-tab").forEach(function (tab) {
+    tab.addEventListener("click", function () {
+      const disc = tab.dataset.disc;
+      document.querySelectorAll(".disc-tab").forEach(function (t) {
+        t.classList.remove("active");
+      });
+      document.querySelectorAll(".disc-panel").forEach(function (p) {
+        p.classList.remove("active");
+      });
+      tab.classList.add("active");
+      const panel = document.querySelector(".disc-panel[data-disc='" + disc + "']");
+      if (panel) panel.classList.add("active");
+    });
+  });
+
+  /* ===== SCROLL FADE ===== */
+  (function () {
+    const sections = document.querySelectorAll(".fade-section");
+    if (!sections.length) return;
+    const observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.08 });
+    sections.forEach(function (el) { observer.observe(el); });
+  })();
+
+  /* ===== CONTACT FORM ===== */
   const WEB3FORMS_URL = "https://api.web3forms.com/submit";
   const ACCESS_KEY = "2b7f38f6-464b-4bc6-8e69-cf667334864d";
 

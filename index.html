@@ -3,8 +3,6 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <!-- CSP SECURITY -->
   <meta http-equiv="Content-Security-Policy" content="
     default-src 'self';
     script-src 'self';
@@ -13,31 +11,28 @@
     img-src 'self' data:;
     connect-src 'self' https://api.web3forms.com;
   ">
-
-  <title>SPORT, UMJETNOST I EDUKACIJA SU NAPOKON POVEZANI. Instaliraj aplikaciju i vodi vannastavne aktivnosti bez komplikacija.</title>
-
-  <meta name="description" content="All Mighty Sync  digitalna platforma za upravljanje privatnim školama i klubovima. Komunikacija, raspored, evidencija i administracija na jednom mjestu." />
-
-  <!-- Poppins font -->
+  <title>All Mighty Sync — Sport, Arts & Education Platform</title>
+  <meta name="description" content="All Mighty Sync connects administrators, teachers, parents and students in extracurricular organizations. Attendance, portfolios, payments and scheduling — one platform." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="icon" type="image/svg+xml" href="images/logo.svg" />
-  <link rel="stylesheet" href="css/style.css?v=6" />
+  <link rel="stylesheet" href="css/style.css?v=7" />
 </head>
 <body>
-<!-- Navbar -->
+
+<!-- NAVBAR -->
 <nav class="navbar">
   <div class="container">
     <div class="brand">
-      <img src="images/logo.svg" alt="All Mighty Sync logo" />
+      <img src="images/logo.svg" alt="All Mighty Sync" />
       <span class="brand-text">All Mighty Sync</span>
     </div>
     <div class="nav-links">
-      <a href="#about-section" data-i18n="nav.about">O NAMA</a>
-      <a href="#contact-section" data-i18n="nav.contact">KONTAKT</a>
-
+      <a href="#features-section" data-i18n="nav.features">FEATURES</a>
+      <a href="#roles-section" data-i18n="nav.roles">ROLES</a>
+      <a href="#get-started-section" data-i18n="nav.getStarted">GET STARTED</a>
+      <a href="#contact-section" data-i18n="nav.contact">CONTACT</a>
       <div class="lang-switcher" role="group" aria-label="Language">
         <button type="button" class="lang-btn active" data-lang="bs">BS</button>
         <button type="button" class="lang-btn" data-lang="en">EN</button>
@@ -47,86 +42,476 @@
   </div>
 </nav>
 
-<!-- Hero -->
-<section class="hero">
+<!-- SECTION 1: HERO -->
+<section class="hero" id="home">
   <div class="container">
     <div class="hero-visual">
-      <img src="images/hero-phones.png" alt="All Mighty Sync mobilna aplikacija" />
+      <img src="images/hero-phones.png" alt="All Mighty Sync app" />
     </div>
     <div class="hero-content">
-      <h1 data-i18n-html="hero.title">
-        Sport, umjetnost i edukacija - <span class="accent">napokon povezani.</span>
-      </h1>
-      <h2 data-i18n="hero.subtitle">Upravljajte prisustvom, materijalima i timovima brzo i jednostavno.</h2>
-      <p data-i18n="hero.description">All Mighty Sync je moderno rješenje za privatne škole i klubove koji žele povećati produktivnost i imati potpunu kontrolu nad svojim aktivnostima - sve iz jedne aplikacije.</p>
-      <div class="coming-soon" data-i18n="hero.comingSoon">USKORO NA:</div>
+      <h1 data-i18n-html="hero.title">Sport, arts and education — <span class="accent">finally connected.</span></h1>
+      <p class="hero-sub" data-i18n="hero.subtitle">Manage your entire organization from one platform. Attendance, student development, scheduling, communication, payments and reporting — connected in one ecosystem built for extracurricular education.</p>
+      <div class="trust-row">
+        <span class="trust-item" data-i18n="hero.trust1">✓ Attendance</span>
+        <span class="trust-item" data-i18n="hero.trust2">✓ Portfolios</span>
+        <span class="trust-item" data-i18n="hero.trust3">✓ Payments</span>
+        <span class="trust-item" data-i18n="hero.trust4">✓ Scheduling</span>
+        <span class="trust-item" data-i18n="hero.trust5">✓ Notifications</span>
+        <span class="trust-item" data-i18n="hero.trust6">✓ Reports</span>
+      </div>
       <div class="store-buttons">
-
-  <span class="store-btn is-disabled" aria-label="Google Play — uskoro" aria-disabled="true">
-    <svg viewBox="0 0 512 512" aria-hidden="true">
-      <path d="M325.3 234.3 104.6 13l280.8 161.2-60.1 60.1zM47 0c-13 6.8-21 19.4-21 35.7v440.6c0 16.3 8 28.9 21 35.7l256.4-256L47 0zm425.2 225.6-58.9-34.1-65.7 64.5 65.7 64.5 60.1-34.1c18-14.3 18-46.5-1.2-60.8zM104.6 499 385.4 337.8l-60.1-60.1L104.6 499z" fill="currentColor"/>
-    </svg>
-    <span>
-      <span class="small" data-i18n="store.google.small">Preuzmi na</span>
-      <span class="big" data-i18n="store.google.big">Google Play</span>
-    </span>
-
-    <!-- CLICKABLE TOOLTIP -->
-    <a href="#contact-section" class="store-tooltip" data-i18n="store.tooltip">
-      Ili se prijavite za demo
-    </a>
-  </span>
-
-
         <!-- APP STORE LINK - re-enable when ready: href="https://apps.apple.com/ba/app/all-mighty-sync/id6776313753" -->
-        <span class="store-btn is-disabled" aria-label="App Store — uskoro" aria-disabled="true">
-    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-      <path d="M17.564 12.713c-.024-2.43 1.984-3.598 2.075-3.654-1.131-1.654-2.892-1.881-3.518-1.907-1.498-.151-2.924.882-3.687.882-.762 0-1.937-.86-3.187-.836-1.641.024-3.155.953-4.001 2.42-1.704 2.953-.436 7.32 1.225 9.715.81 1.171 1.776 2.488 3.044 2.441 1.222-.05 1.683-.79 3.16-.79 1.476 0 1.893.79 3.187.764 1.316-.024 2.149-1.196 2.953-2.371.93-1.36 1.314-2.677 1.337-2.745-.029-.012-2.566-.985-2.588-3.919zM15.18 5.475c.677-.82 1.131-1.96.998-3.092-.965.039-2.137.643-2.836 1.461-.626.726-1.171 1.886-1.024 2.998 1.078.082 2.18-.547 2.862-1.367z" />
-    </svg>
-    <span>
-      <span class="small" data-i18n="store.apple.small">Preuzmi na</span>
-      <span class="big" data-i18n="store.apple.big">App Store</span>
-    </span>
-    <!-- CLICKABLE TOOLTIP -->
-    <a href="#contact-section" class="store-tooltip" data-i18n="store.tooltip">
-      Ili se prijavite za demo
-    </a>
-  </span>
-
+        <span class="store-btn is-disabled" aria-label="App Store" aria-disabled="true">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24" aria-hidden="true"><path d="M17.564 12.713c-.024-2.43 1.984-3.598 2.075-3.654-1.131-1.654-2.892-1.881-3.518-1.907-1.498-.151-2.924.882-3.687.882-.762 0-1.937-.86-3.187-.836-1.641.024-3.155.953-4.001 2.42-1.704 2.953-.436 7.32 1.225 9.715.81 1.171 1.776 2.488 3.044 2.441 1.222-.05 1.683-.79 3.16-.79 1.476 0 1.893.79 3.187.764 1.316-.024 2.149-1.196 2.953-2.371.93-1.36 1.314-2.677 1.337-2.745-.029-.012-2.566-.985-2.588-3.919zM15.18 5.475c.677-.82 1.131-1.96.998-3.092-.965.039-2.137.643-2.836 1.461-.626.726-1.171 1.886-1.024 2.998 1.078.082 2.18-.547 2.862-1.367z"/></svg>
+          <span><span class="small" data-i18n="store.apple.small">Download on</span><span class="big" data-i18n="store.apple.big">App Store</span></span>
+          <a href="#contact-section" class="store-tooltip" data-i18n="store.tooltip">Or request a demo</a>
+        </span>
+        <span class="store-btn is-disabled" aria-label="Google Play" aria-disabled="true">
+          <svg viewBox="0 0 512 512" fill="currentColor" width="24" height="24" aria-hidden="true"><path d="M325.3 234.3 104.6 13l280.8 161.2-60.1 60.1zM47 0c-13 6.8-21 19.4-21 35.7v440.6c0 16.3 8 28.9 21 35.7l256.4-256L47 0zm425.2 225.6-58.9-34.1-65.7 64.5 65.7 64.5 60.1-34.1c18-14.3 18-46.5-1.2-60.8zM104.6 499 385.4 337.8l-60.1-60.1L104.6 499z"/></svg>
+          <span><span class="small" data-i18n="store.google.small">Download on</span><span class="big" data-i18n="store.google.big">Google Play</span></span>
+          <a href="#contact-section" class="store-tooltip" data-i18n="store.tooltip">Or request a demo</a>
+        </span>
+        <a href="#contact-section" class="btn-demo" data-i18n="hero.requestDemo">Request Demo</a>
       </div>
     </div>
   </div>
 </section>
 
-<!-- About -->
-<section class="about" id="about-section">
+<!-- SECTION 2: THE PROBLEM -->
+<section class="problem-section fade-section">
   <div class="container">
-    <div>
-      <h2 data-i18n="about.title">O NAMA</h2>
-      <p data-i18n="about.p1">All Mighty Sync je digitalna platforma koja pojednostavljuje upravljanje privatnim školama i klubovima - od komunikacije i rasporeda do evidencije i administracije. Umjesto više nepovezanih alata, sve se nalazi na jednom mjestu, jasno i pregledno.</p>
-      <p data-i18n="about.p2">Pomažemo vlasnicima, nastavnicima, učenicima i roditeljima da uštede vrijeme, smanje stres i imaju potpunu kontrolu nad svakodnevnim radom - kako bi se mogli fokusirati na ono što je najvažnije: razvoj djece i kvalitet nastave.</p>
-    </div>
-    <div class="team-grid">
-      <div class="team-card">
-        <img src="images/anja.png" alt="Anja Ćurković" />
-        <div class="overlay">
-          <div class="name">ANJA ĆURKOVIĆ</div>
-          <div class="role" data-i18n="team.anja.role">CEO &amp; CO-FOUNDER</div>
+    <div class="section-label" data-i18n="problem.label">THE PROBLEM</div>
+    <h2 class="section-heading" data-i18n="problem.heading">Running a great organization shouldn't require five different tools.</h2>
+    <div class="problem-flow">
+      <div class="problem-tools">
+        <div class="tool-chip">💬 <span data-i18n="problem.tool1">WhatsApp</span></div>
+        <div class="tool-chip">📊 <span data-i18n="problem.tool2">Excel</span></div>
+        <div class="tool-chip">📋 <span data-i18n="problem.tool3">Paper Lists</span></div>
+        <div class="tool-chip">📧 <span data-i18n="problem.tool4">Email</span></div>
+        <div class="tool-chip">📞 <span data-i18n="problem.tool5">Phone Calls</span></div>
+        <div class="tool-chip">📅 <span data-i18n="problem.tool6">Calendar App</span></div>
+        <div class="tool-chip">🧾 <span data-i18n="problem.tool7">Manual Invoices</span></div>
+      </div>
+      <div class="problem-converge">
+        <div class="converge-arrow">↓</div>
+        <div class="converge-label" data-i18n="problem.converge">all land on one desk</div>
+        <div class="converge-arrow">↓</div>
+        <div class="converge-solution">
+          <img src="images/logo.svg" alt="All Mighty Sync" />
+          <span>All Mighty Sync</span>
         </div>
       </div>
-      <div class="team-card">
-        <img src="images/edis.png" alt="Edis Bilić" />
-        <div class="overlay">
-          <div class="name">EDIS BILIĆ</div>
-          <div class="role" data-i18n="team.edis.role">CPO &amp; CO-FOUNDER</div>
+    </div>
+    <p class="problem-body" data-i18n="problem.body">When your group management lives in WhatsApp, your finances in Excel, your attendance on paper, and your communication across five platforms, things fall through the cracks — every week. Your teachers lose time. Your parents stay uninformed. And the administrative burden lands entirely on the person who should be focused on building the organization.</p>
+  </div>
+</section>
+
+<!-- SECTION 3: A DAY WITH AMS -->
+<section class="timeline-section fade-section">
+  <div class="container">
+    <div class="section-label" data-i18n="timeline.label">A DAY IN THE LIFE</div>
+    <h2 class="section-heading" data-i18n="timeline.heading">What a day looks like when everything is connected.</h2>
+    <div class="timeline">
+      <div class="timeline-item"><div class="timeline-time">7:30</div><div class="timeline-dot"></div><div class="timeline-content"><p data-i18n="timeline.730">Admin adjusts Thursday's schedule. All teachers and parents in that group receive an instant notification.</p></div></div>
+      <div class="timeline-item"><div class="timeline-time">9:00</div><div class="timeline-dot"></div><div class="timeline-content"><p data-i18n="timeline.900">Teacher opens attendance for morning practice. Marks present/absent in under a minute. Three absent students' parents receive immediate push notifications.</p></div></div>
+      <div class="timeline-item"><div class="timeline-time">10:30</div><div class="timeline-dot"></div><div class="timeline-content"><p data-i18n="timeline.1030">Teacher records benchmark results for the weekly speed test. Results are saved to each student's performance history.</p></div></div>
+      <div class="timeline-item"><div class="timeline-time">12:00</div><div class="timeline-dot"></div><div class="timeline-content"><p data-i18n="timeline.1200">A parent uploads payment proof for the monthly membership fee. Admin sees a new pending submission.</p></div></div>
+      <div class="timeline-item"><div class="timeline-time">14:00</div><div class="timeline-dot"></div><div class="timeline-content"><p data-i18n="timeline.1400">New training video is uploaded to the group's materials. Students and parents receive a notification.</p></div></div>
+      <div class="timeline-item"><div class="timeline-time">16:00</div><div class="timeline-dot"></div><div class="timeline-content"><p data-i18n="timeline.1600">Admin approves last month's gallery album. Photos become visible to the entire group.</p></div></div>
+      <div class="timeline-item"><div class="timeline-time">18:00</div><div class="timeline-dot"></div><div class="timeline-content"><p data-i18n="timeline.1800">Teacher finishes skill assessments for three students. Their portfolios are updated.</p></div></div>
+      <div class="timeline-item timeline-item--end">
+        <div class="timeline-time" data-i18n="timeline.endLabel">End of day</div>
+        <div class="timeline-dot timeline-dot--orange"></div>
+        <div class="timeline-content timeline-content--highlight"><p data-i18n="timeline.end">Admin checks the financial overview. Three payments approved, two pending. Schedule confirmed. Nothing fell through.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 4: FEATURES -->
+<section class="features-section fade-section" id="features-section">
+  <div class="container">
+    <div class="section-label" data-i18n="features.label">THE PLATFORM</div>
+    <h2 class="section-heading" data-i18n="features.heading">Everything your organization needs.</h2>
+
+    <div class="feature-block feature-block--img-left">
+      <div class="feature-block-visual">
+        <div class="app-preview app-preview--orange">
+          <div class="app-preview-pill" data-i18n="features.block1.previewLabel">Organisation Overview</div>
+          <div class="app-stats-row">
+            <div class="app-stat"><span class="app-stat-num">156</span><span class="app-stat-label" data-i18n="features.stat.students">Students</span></div>
+            <div class="app-stat"><span class="app-stat-num">12</span><span class="app-stat-label" data-i18n="features.stat.teachers">Teachers</span></div>
+            <div class="app-stat"><span class="app-stat-num">98</span><span class="app-stat-label" data-i18n="features.stat.parents">Parents</span></div>
+            <div class="app-stat"><span class="app-stat-num">24</span><span class="app-stat-label" data-i18n="features.stat.events">Events</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="feature-block-content">
+        <div class="feature-tag" data-i18n="features.block1.tag">Administration</div>
+        <h3 data-i18n="features.block1.title">Organization Management</h3>
+        <p data-i18n="features.block1.body">Everything in one control center. Invite members, create groups, configure roles and permissions, review payments, and broadcast announcements — all from your phone.</p>
+        <ul class="feature-list">
+          <li data-i18n="features.block1.li1">User invitations and role assignment</li>
+          <li data-i18n="features.block1.li2">Group creation with teachers, students and schedules</li>
+          <li data-i18n="features.block1.li3">Discipline configuration and custom terminology</li>
+          <li data-i18n="features.block1.li4">Financial overview and reporting</li>
+          <li data-i18n="features.block1.li5">Organization-wide attendance summaries</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="feature-block feature-block--img-right">
+      <div class="feature-block-content">
+        <div class="feature-tag feature-tag--indigo" data-i18n="features.block2.tag">Portfolios</div>
+        <h3 data-i18n="features.block2.title">Student Development</h3>
+        <p data-i18n="features.block2.body">Not a gradebook. A living record of every student's development — benchmark results, teacher assessments, competition placements, media, and milestones — that grows over years, not seasons.</p>
+        <ul class="feature-list">
+          <li data-i18n="features.block2.li1">Benchmark results with timestamps and progression</li>
+          <li data-i18n="features.block2.li2">Structured teacher assessments per skill category</li>
+          <li data-i18n="features.block2.li3">Discipline-specific evaluation categories</li>
+          <li data-i18n="features.block2.li4">Photos and videos linked to each student</li>
+          <li data-i18n="features.block2.li5">Portfolio transfers when student changes organization</li>
+        </ul>
+      </div>
+      <div class="feature-block-visual">
+        <div class="app-preview app-preview--indigo">
+          <div class="app-preview-pill" data-i18n="features.block2.previewLabel">Student Portfolio</div>
+          <div class="portfolio-bars">
+            <div class="portfolio-bar-row"><span>100m Sprint</span><div class="pbar"><div class="pbar-fill" style="width:72%"></div></div><span class="pbar-val">13.1s</span></div>
+            <div class="portfolio-bar-row"><span data-i18n="features.block2.skill2">Technique</span><div class="pbar"><div class="pbar-fill" style="width:85%"></div></div><span class="pbar-val">8.5</span></div>
+            <div class="portfolio-bar-row"><span data-i18n="features.block2.skill3">Endurance</span><div class="pbar"><div class="pbar-fill" style="width:60%"></div></div><span class="pbar-val">6.0</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="feature-block feature-block--img-left">
+      <div class="feature-block-visual">
+        <div class="app-preview app-preview--white">
+          <div class="app-preview-pill app-preview-pill--dark" data-i18n="features.block3.previewLabel">Payments</div>
+          <div class="payment-rows">
+            <div class="payment-row payment-row--approved"><span data-i18n="features.block3.p1">Monthly — June</span><span class="pay-status pay-status--approved" data-i18n="features.block3.approved">Approved</span></div>
+            <div class="payment-row payment-row--pending"><span data-i18n="features.block3.p2">Monthly — May</span><span class="pay-status pay-status--pending" data-i18n="features.block3.pending">Pending</span></div>
+            <div class="payment-row"><span data-i18n="features.block3.p3">Competition Fee</span><span class="pay-status pay-status--pending" data-i18n="features.block3.pending">Pending</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="feature-block-content">
+        <div class="feature-tag feature-tag--green" data-i18n="features.block3.tag">Finance</div>
+        <h3 data-i18n="features.block3.title">Payments and Finance</h3>
+        <p data-i18n="features.block3.body">Monthly membership fees, one-time charges, proof-upload workflow, one-tap approval, full payment history. Everything your finance process needs — without a spreadsheet in sight.</p>
+        <ul class="feature-list">
+          <li data-i18n="features.block3.li1">Monthly membership ledger with proof upload</li>
+          <li data-i18n="features.block3.li2">One-time charges targeted to individual, group, or school</li>
+          <li data-i18n="features.block3.li3">Admin review — approve or reject with one tap</li>
+          <li data-i18n="features.block3.li4">Automatic payment notification to payers</li>
+          <li data-i18n="features.block3.li5">Financial overview dashboard and full history</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="feature-block feature-block--img-right">
+      <div class="feature-block-content">
+        <div class="feature-tag" data-i18n="features.block4.tag">Communication</div>
+        <h3 data-i18n="features.block4.title">Real-Time Communication</h3>
+        <p data-i18n="features.block4.body">Every significant event generates an instant push notification that deep-links directly to the relevant screen. No searching. No missed messages. No more parent WhatsApp groups.</p>
+        <ul class="feature-list">
+          <li data-i18n="features.block4.li1">Instant push notifications on iOS and Android</li>
+          <li data-i18n="features.block4.li2">In-app notification center with full history</li>
+          <li data-i18n="features.block4.li3">Teacher substitution with automated notification chain</li>
+          <li data-i18n="features.block4.li4">Group and organization-wide announcements</li>
+          <li data-i18n="features.block4.li5">Direct messaging between admins and teachers</li>
+        </ul>
+      </div>
+      <div class="feature-block-visual">
+        <div class="app-preview app-preview--dark">
+          <div class="app-preview-pill" data-i18n="features.block4.previewLabel">Notifications</div>
+          <div class="notif-rows">
+            <div class="notif-row"><span class="notif-dot notif-dot--orange"></span><span data-i18n="features.block4.n1">Schedule changed — Thursday 17:00</span></div>
+            <div class="notif-row"><span class="notif-dot notif-dot--red"></span><span data-i18n="features.block4.n2">Amir marked absent</span></div>
+            <div class="notif-row"><span class="notif-dot notif-dot--green"></span><span data-i18n="features.block4.n3">Payment approved ✓</span></div>
+            <div class="notif-row"><span class="notif-dot notif-dot--indigo"></span><span data-i18n="features.block4.n4">New material uploaded</span></div>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Contact -->
-<section class="contact" id="contact-section">
+<!-- SECTION 5: DISCIPLINES -->
+<section class="disciplines-section fade-section">
+  <div class="container">
+    <div class="section-label" data-i18n="disciplines.label">DISCIPLINES</div>
+    <h2 class="section-heading" data-i18n="disciplines.heading">The platform adapts to your organization. Not the other way around.</h2>
+    <p class="section-sub" data-i18n="disciplines.sub">Every discipline works differently. All Mighty Sync knows that.</p>
+    <div class="disc-tabs" role="tablist">
+      <button class="disc-tab active" data-disc="football" data-i18n="disc.football.tab">Football</button>
+      <button class="disc-tab" data-disc="dance" data-i18n="disc.dance.tab">Dance</button>
+      <button class="disc-tab" data-disc="drama" data-i18n="disc.drama.tab">Drama</button>
+      <button class="disc-tab" data-disc="music" data-i18n="disc.music.tab">Music</button>
+      <button class="disc-tab" data-disc="martial" data-i18n="disc.martial.tab">Martial Arts</button>
+      <button class="disc-tab" data-disc="language" data-i18n="disc.language.tab">Language</button>
+      <button class="disc-tab" data-disc="art" data-i18n="disc.art.tab">Art</button>
+      <button class="disc-tab" data-disc="coding" data-i18n="disc.coding.tab">Coding</button>
+    </div>
+    <div class="disc-content">
+      <div class="disc-panel active" data-disc="football"><h3 data-i18n="disc.football.title">Football &amp; Team Sports</h3><p data-i18n="disc.football.body">Track sprint times, strength benchmarks, technical skill ratings, match performance and physical progression. Coaches see improvement over weeks and months, not just session-by-session.</p></div>
+      <div class="disc-panel" data-disc="dance"><h3 data-i18n="disc.dance.title">Dance</h3><p data-i18n="disc.dance.body">Evaluate technique across categories: posture, musicality, coordination, artistry, stage presence. Track choreography progression. Log performance videos. Build a visual artistic portfolio that grows with every student.</p></div>
+      <div class="disc-panel" data-disc="drama"><h3 data-i18n="disc.drama.title">Drama &amp; Performing Arts</h3><p data-i18n="disc.drama.body">Assess scene work, monologue delivery, improvisation, stage confidence. Record audition results and performance history. Build an audition-ready portfolio every student can carry with them.</p></div>
+      <div class="disc-panel" data-disc="music"><h3 data-i18n="disc.music.title">Music</h3><p data-i18n="disc.music.body">Track grade and level progression, repertoire completion, theory knowledge and performance recordings. Link sessions to specific pieces or programs.</p></div>
+      <div class="disc-panel" data-disc="martial"><h3 data-i18n="disc.martial.title">Martial Arts</h3><p data-i18n="disc.martial.body">Monitor belt and grade progression, sparring evaluations, technique ratings per category, competition results and physical conditioning benchmarks.</p></div>
+      <div class="disc-panel" data-disc="language"><h3 data-i18n="disc.language.title">Language Schools</h3><p data-i18n="disc.language.body">Monitor speaking, writing, listening and reading levels per student. Track textbook and module progress. Log verbal assessments and vocabulary benchmarks.</p></div>
+      <div class="disc-panel" data-disc="art"><h3 data-i18n="disc.art.title">Art</h3><p data-i18n="disc.art.body">Log creative works by date and medium. Track technique development, project completion, exhibition results and teacher critique notes.</p></div>
+      <div class="disc-panel" data-disc="coding"><h3 data-i18n="disc.coding.title">Coding &amp; Robotics</h3><p data-i18n="disc.coding.body">Track project completions, skill levels per language or technology, challenge results, mentorship notes and portfolio entries.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 6: ROLES -->
+<section class="roles-section fade-section" id="roles-section">
+  <div class="container">
+    <div class="section-label" data-i18n="roles.label">FOR EVERYONE</div>
+    <h2 class="section-heading" data-i18n="roles.heading">Four roles. One platform. Nobody left behind.</h2>
+    <div class="roles-grid">
+
+      <div class="role-card">
+        <div class="role-icon role-icon--orange">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+        </div>
+        <h3 data-i18n="roles.admin.title">Administrators</h3>
+        <p class="role-intro" data-i18n="roles.admin.intro">You built this organization. Now run it without administrative chaos.</p>
+        <ul class="role-list">
+          <li data-i18n="roles.admin.li1">Manage every member and their role</li>
+          <li data-i18n="roles.admin.li2">Create groups, assign teachers and students</li>
+          <li data-i18n="roles.admin.li3">Track attendance across all groups</li>
+          <li data-i18n="roles.admin.li4">Review payments with one-tap approval</li>
+          <li data-i18n="roles.admin.li5">Financial overview and full reporting</li>
+        </ul>
+        <div class="role-result"><span data-i18n="roles.admin.result">You spend your time building the organization. Not chasing spreadsheets.</span></div>
+      </div>
+
+      <div class="role-card">
+        <div class="role-icon role-icon--indigo">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+        </div>
+        <h3 data-i18n="roles.teacher.title">Teachers &amp; Coaches</h3>
+        <p class="role-intro" data-i18n="roles.teacher.intro">Everything you need to run a class is on your phone.</p>
+        <ul class="role-list">
+          <li data-i18n="roles.teacher.li1">Mark attendance in under a minute</li>
+          <li data-i18n="roles.teacher.li2">Log benchmark results after training</li>
+          <li data-i18n="roles.teacher.li3">Write student progress notes</li>
+          <li data-i18n="roles.teacher.li4">Upload group materials</li>
+          <li data-i18n="roles.teacher.li5">Request substitutes with automated notification</li>
+        </ul>
+        <div class="role-result"><span data-i18n="roles.teacher.result">Less time on admin. More time with students.</span></div>
+      </div>
+
+      <div class="role-card">
+        <div class="role-icon role-icon--orange">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <h3 data-i18n="roles.parent.title">Parents</h3>
+        <p class="role-intro" data-i18n="roles.parent.intro">You trust us with your child. We make sure you're never left in the dark.</p>
+        <ul class="role-list">
+          <li data-i18n="roles.parent.li1">Instant notification when your child is absent</li>
+          <li data-i18n="roles.parent.li2">Live view of schedule including last-minute changes</li>
+          <li data-i18n="roles.parent.li3">Track your child's development portfolio</li>
+          <li data-i18n="roles.parent.li4">Upload payment proof and track approval</li>
+          <li data-i18n="roles.parent.li5">Follow multiple children across organizations</li>
+        </ul>
+        <div class="role-result"><span data-i18n="roles.parent.result">Complete visibility into your child's progress, without endless messages to the teacher.</span></div>
+      </div>
+
+      <div class="role-card">
+        <div class="role-icon role-icon--indigo">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+        </div>
+        <h3 data-i18n="roles.student.title">Students</h3>
+        <p class="role-intro" data-i18n="roles.student.intro">Your schedule, your progress, your organization — all in one place.</p>
+        <ul class="role-list">
+          <li data-i18n="roles.student.li1">Always know when and where your next class is</li>
+          <li data-i18n="roles.student.li2">Follow your own development portfolio</li>
+          <li data-i18n="roles.student.li3">See benchmark results and your progress over time</li>
+          <li data-i18n="roles.student.li4">Access shared learning materials</li>
+          <li data-i18n="roles.student.li5">Be part of an organization that tracks your growth</li>
+        </ul>
+        <div class="role-result"><span data-i18n="roles.student.result">You know exactly where you stand. And you can see yourself getting better.</span></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 7: PORTFOLIO -->
+<section class="portfolio-section fade-section">
+  <div class="container">
+    <div class="portfolio-inner">
+      <div class="portfolio-text">
+        <div class="section-label" data-i18n="portfolio.label">STUDENT DEVELOPMENT</div>
+        <h2 data-i18n="portfolio.heading">Every achievement deserves to be remembered.</h2>
+        <p class="section-sub" data-i18n="portfolio.sub">All Mighty Sync builds a long-term development portfolio for every student — not just this season's attendance.</p>
+        <p data-i18n="portfolio.body1">From the first sprint time logged to the last performance before graduation, every result, every note, every assessment, every competition placement — it lives in one place.</p>
+        <p data-i18n="portfolio.body2">Parents see their child's progression in real time. When a student moves to a higher group, changes teachers, or changes organization — their history comes with them.</p>
+      </div>
+      <div class="portfolio-cards">
+        <div class="portfolio-card">
+          <div class="portfolio-card-label" data-i18n="portfolio.card1.label">100m Sprint — Progress</div>
+          <div class="progress-timeline">
+            <div class="pt-entry"><span class="pt-date">Sep</span><span class="pt-val">14.2s</span></div>
+            <span class="pt-arrow">→</span>
+            <div class="pt-entry"><span class="pt-date">Nov</span><span class="pt-val">13.6s</span></div>
+            <span class="pt-arrow">→</span>
+            <div class="pt-entry pt-entry--best"><span class="pt-date">Feb</span><span class="pt-val">13.1s</span></div>
+          </div>
+        </div>
+        <div class="portfolio-card">
+          <div class="portfolio-card-label" data-i18n="portfolio.card2.label">Coach Assessment</div>
+          <div class="assessment-rows">
+            <div class="assessment-row"><span data-i18n="portfolio.card2.c1">Ball control</span><div class="abar"><div class="abar-fill" style="width:80%"></div></div><span>8/10</span></div>
+            <div class="assessment-row"><span data-i18n="portfolio.card2.c2">Positioning</span><div class="abar"><div class="abar-fill" style="width:70%"></div></div><span>7/10</span></div>
+            <div class="assessment-row"><span data-i18n="portfolio.card2.c3">Speed</span><div class="abar"><div class="abar-fill" style="width:90%"></div></div><span>9/10</span></div>
+          </div>
+        </div>
+        <div class="portfolio-card portfolio-card--milestone">
+          <div class="milestone-icon">🏆</div>
+          <div class="portfolio-card-label" data-i18n="portfolio.card3.label">Regional Championship</div>
+          <div class="milestone-val" data-i18n="portfolio.card3.val">2nd place</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 8: ECOSYSTEM -->
+<section class="ecosystem-section fade-section">
+  <div class="container">
+    <div class="section-label" data-i18n="ecosystem.label">ONE ECOSYSTEM</div>
+    <h2 class="section-heading" data-i18n="ecosystem.heading">One account. Every organization. Everything connected.</h2>
+    <p class="section-sub" data-i18n="ecosystem.sub">All Mighty Sync is not a tool you use inside one school. It is the platform you carry with you.</p>
+    <div class="eco-grid">
+      <div class="eco-card"><div class="eco-icon">👨‍👧‍👦</div><h4 data-i18n="eco.s1.title">A parent with two children</h4><p data-i18n="eco.s1.body">One child in a football academy. Another in a dance school. Two organizations. One account. One notification center. Both portfolios. Both payments. Always together.</p></div>
+      <div class="eco-card"><div class="eco-icon">🏫</div><h4 data-i18n="eco.s2.title">A teacher working in two places</h4><p data-i18n="eco.s2.body">Teaches drama on Tuesdays and a language school on Thursdays. Two organizations. One login. Their groups, schedules, and student lists for both — one device.</p></div>
+      <div class="eco-card"><div class="eco-icon">🔄</div><h4 data-i18n="eco.s3.title">A student who changes schools</h4><p data-i18n="eco.s3.body">Moves from one football club to another. Their benchmark history, assessments, and development portfolio transfer with them — because it belongs to them, not to the old club.</p></div>
+      <div class="eco-card"><div class="eco-icon">🎯</div><h4 data-i18n="eco.s4.title">An organization with multiple disciplines</h4><p data-i18n="eco.s4.body">A private academy running football, dance, and music simultaneously. Each discipline has its own groups, portfolio structure, and terminology. All managed from one admin account.</p></div>
+    </div>
+    <p class="eco-closing" data-i18n="ecosystem.closing">Everyone sees exactly what they are allowed to see. Nothing more. Nothing crosses between organizations. But the experience is seamless — because you only ever need one account.</p>
+  </div>
+</section>
+
+<!-- SECTION 9: IDENTITY (dark) -->
+<section class="identity-section fade-section">
+  <div class="container">
+    <div class="section-label identity-label" data-i18n="identity.label">YOUR IDENTITY</div>
+    <h2 data-i18n="identity.heading">All Mighty Sync provides the technology. Your organization keeps its identity.</h2>
+    <div class="identity-body">
+      <p data-i18n="identity.body1">When your members open the app, they see your organization. Your name. Your structure. Your terminology. If you call your groups "squads" — the app says squads. If your evaluation categories have specific names — they appear exactly as you define them.</p>
+      <p data-i18n="identity.body2">Every organization on All Mighty Sync is completely distinct. Your disciplines, your schedules, your payment setup — all configured exactly for you. You are not adapting to a generic platform. The platform is adapting to you.</p>
+      <p class="identity-close" data-i18n="identity.close">We build and maintain the technology. You focus on building something great.</p>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 10: GETTING STARTED -->
+<section class="onboarding-section fade-section" id="get-started-section">
+  <div class="container">
+    <div class="section-label" data-i18n="onboarding.label">GETTING STARTED</div>
+    <h2 class="section-heading" data-i18n="onboarding.heading">From first call to fully operational — faster than you expect.</h2>
+    <p class="section-sub" data-i18n="onboarding.sub">No IT department required. Our team walks you through it once, and then you're running on your own.</p>
+    <div class="steps-grid">
+      <div class="step-card"><div class="step-num">01</div><h4 data-i18n="onboarding.s1.title">Meet with our team</h4><p data-i18n="onboarding.s1.body">We learn how your organization works, which disciplines you run, and what structure makes sense for you. We agree on the setup approach together.</p></div>
+      <div class="step-card"><div class="step-num">02</div><h4 data-i18n="onboarding.s2.title">We set up your organization</h4><p data-i18n="onboarding.s2.body">Your administrator receives access and guidance to configure groups, disciplines, terminology, schedules, and permissions. We are available throughout.</p></div>
+      <div class="step-card"><div class="step-num">03</div><h4 data-i18n="onboarding.s3.title">Invite your people</h4><p data-i18n="onboarding.s3.body">Teachers, students and parents receive email invitations and join an organization that is already structured and ready. They open the app and everything is there.</p></div>
+      <div class="step-card"><div class="step-num">04</div><h4 data-i18n="onboarding.s4.title">Operate independently</h4><p data-i18n="onboarding.s4.body">Day-to-day, your organization runs through the platform. Our team remains available if you need us, but the admin controls everything.</p></div>
+    </div>
+    <p class="onboarding-tagline" data-i18n="onboarding.tagline">We hand over the keys. You drive.</p>
+    <div class="onboarding-cta"><a href="#contact-section" class="btn-primary" data-i18n="onboarding.cta">Request a Demo</a></div>
+  </div>
+</section>
+
+<!-- SECTION 11: COMPARISON -->
+<section class="comparison-section fade-section">
+  <div class="container">
+    <div class="section-label" data-i18n="comparison.label">WHY ALL MIGHTY SYNC</div>
+    <h2 class="section-heading" data-i18n="comparison.heading">Built specifically for extracurricular organizations.</h2>
+    <div class="comparison-wrap">
+      <table class="comparison-table">
+        <thead>
+          <tr>
+            <th data-i18n="comparison.th.feature">Feature</th>
+            <th data-i18n="comparison.th.generic">Generic Alternatives</th>
+            <th class="ams-col" data-i18n="comparison.th.ams">All Mighty Sync</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td data-i18n="comp.r1.f">Built for</td><td data-i18n="comp.r1.g">General education</td><td class="ams-col" data-i18n="comp.r1.a">Extracurricular organizations</td></tr>
+          <tr><td data-i18n="comp.r2.f">Disciplines</td><td data-i18n="comp.r2.g">Rigid structure</td><td class="ams-col" data-i18n="comp.r2.a">Adapts to your discipline</td></tr>
+          <tr><td data-i18n="comp.r3.f">Terminology</td><td data-i18n="comp.r3.g">Fixed</td><td class="ams-col" data-i18n="comp.r3.a">Fully customizable</td></tr>
+          <tr><td data-i18n="comp.r4.f">Organizations per account</td><td data-i18n="comp.r4.g">One</td><td class="ams-col" data-i18n="comp.r4.a">Multiple — for all roles</td></tr>
+          <tr><td data-i18n="comp.r5.f">Student development</td><td data-i18n="comp.r5.g">Attendance only</td><td class="ams-col" data-i18n="comp.r5.a">Full long-term portfolio</td></tr>
+          <tr><td data-i18n="comp.r6.f">Payments</td><td data-i18n="comp.r6.g">Manual or external</td><td class="ams-col" data-i18n="comp.r6.a">Built-in — membership + charges</td></tr>
+          <tr><td data-i18n="comp.r7.f">Communication</td><td data-i18n="comp.r7.g">Email</td><td class="ams-col" data-i18n="comp.r7.a">Real-time push + in-app</td></tr>
+          <tr><td data-i18n="comp.r8.f">Parent visibility</td><td data-i18n="comp.r8.g">Limited</td><td class="ams-col" data-i18n="comp.r8.a">Full real-time access</td></tr>
+          <tr><td data-i18n="comp.r9.f">Teacher substitution</td><td data-i18n="comp.r9.g">Phone calls</td><td class="ams-col" data-i18n="comp.r9.a">Automated request chain</td></tr>
+          <tr><td data-i18n="comp.r10.f">Reporting</td><td data-i18n="comp.r10.g">Spreadsheets</td><td class="ams-col" data-i18n="comp.r10.a">Live dashboard + reports</td></tr>
+          <tr><td data-i18n="comp.r11.f">Languages</td><td data-i18n="comp.r11.g">Usually one</td><td class="ams-col">EN · BS · HR · SR · DE</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 12: FOUNDERS -->
+<section class="founders-section fade-section" id="about-section">
+  <div class="container">
+    <div class="founders-inner">
+      <div class="founders-text">
+        <div class="section-label" data-i18n="founders.label">THE TEAM</div>
+        <h2 data-i18n="founders.heading">Built by people who lived the problem.</h2>
+        <p data-i18n="founders.body1">Anja Ćurković and Edis Bilić created All Mighty Sync after spending years watching the same scene repeat itself: outstanding coaches and teachers spending hours every week on WhatsApp threads, Excel files, paper lists and phone calls.</p>
+        <p data-i18n="founders.body2">Hours that weren't spent in the gym. Hours that weren't spent in the studio. Hours that weren't spent developing students.</p>
+        <p data-i18n="founders.body3">The technology to solve this problem already existed. What didn't exist was a platform that understood how extracurricular organizations actually work — so they built it.</p>
+        <p class="founders-built" data-i18n="founders.built">Built in Sarajevo. Supported by Foundation 787.</p>
+      </div>
+      <div class="team-grid">
+        <div class="team-card">
+          <img src="images/anja.png" alt="Anja Ćurković" />
+          <div class="overlay"><div class="name">ANJA ĆURKOVIĆ</div><div class="role" data-i18n="team.anja.role">CEO &amp; CO-FOUNDER</div></div>
+        </div>
+        <div class="team-card">
+          <img src="images/edis.png" alt="Edis Bilić" />
+          <div class="overlay"><div class="name">EDIS BILIĆ</div><div class="role" data-i18n="team.edis.role">CPO &amp; CO-FOUNDER</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 13: FAQ -->
+<section class="faq-section fade-section" id="faq-section">
+  <div class="container">
+    <div class="section-label" data-i18n="faq.label">FAQ</div>
+    <h2 class="section-heading" data-i18n="faq.heading">Common questions.</h2>
+    <div class="faq-list">
+      <div class="faq-item"><button class="faq-q" aria-expanded="false"><span data-i18n="faq.q1">How long does it take to get set up?</span><span class="faq-icon" aria-hidden="true">+</span></button><div class="faq-a"><p data-i18n="faq.a1">Most organizations are fully operational within a few days of the initial meeting. The setup process is guided — we walk your admin through the configuration and you begin inviting members once the structure is in place.</p></div></div>
+      <div class="faq-item"><button class="faq-q" aria-expanded="false"><span data-i18n="faq.q2">Do we need an IT department or technical expertise?</span><span class="faq-icon" aria-hidden="true">+</span></button><div class="faq-a"><p data-i18n="faq.a2">No. Everything is configured by your admin through the app. No code, no servers, no technical setup required. If you can run a WhatsApp group, you can set up All Mighty Sync.</p></div></div>
+      <div class="faq-item"><button class="faq-q" aria-expanded="false"><span data-i18n="faq.q3">How does the invitation process work?</span><span class="faq-icon" aria-hidden="true">+</span></button><div class="faq-a"><p data-i18n="faq.a3">Your admin contacts us and we activate your organization. The admin then invites teachers, students and parents by email from the app. They receive a link, create an account, and join an organization that is already ready.</p></div></div>
+      <div class="faq-item"><button class="faq-q" aria-expanded="false"><span data-i18n="faq.q4">Can parents follow multiple children in different organizations?</span><span class="faq-icon" aria-hidden="true">+</span></button><div class="faq-a"><p data-i18n="faq.a4">Yes. A parent can have children in completely separate organizations and manage all of them from a single account and notification feed.</p></div></div>
+      <div class="faq-item"><button class="faq-q" aria-expanded="false"><span data-i18n="faq.q5">Can a teacher work in multiple organizations?</span><span class="faq-icon" aria-hidden="true">+</span></button><div class="faq-a"><p data-i18n="faq.a5">Yes. A teacher can belong to multiple organizations simultaneously. They switch between them within the same login.</p></div></div>
+      <div class="faq-item"><button class="faq-q" aria-expanded="false"><span data-i18n="faq.q6">Can terminology be customised?</span><span class="faq-icon" aria-hidden="true">+</span></button><div class="faq-a"><p data-i18n="faq.a6">Yes. Admins define what groups, disciplines, levels and evaluation categories are called inside their organization. The platform uses your language, not a generic one.</p></div></div>
+      <div class="faq-item"><button class="faq-q" aria-expanded="false"><span data-i18n="faq.q7">What disciplines does the platform support?</span><span class="faq-icon" aria-hidden="true">+</span></button><div class="faq-a"><p data-i18n="faq.a7">Football, basketball, dance, drama, music, gymnastics, martial arts, coding, robotics, language schools, art, and any custom discipline you define. The portfolio and assessment structure adapts per discipline.</p></div></div>
+      <div class="faq-item"><button class="faq-q" aria-expanded="false"><span data-i18n="faq.q8">What does a student portfolio contain?</span><span class="faq-icon" aria-hidden="true">+</span></button><div class="faq-a"><p data-i18n="faq.a8">Benchmark results with dates and values, structured teacher assessments per skill category, competition results, training photos and videos, teacher notes, and achievement milestones. The structure is defined per discipline.</p></div></div>
+      <div class="faq-item"><button class="faq-q" aria-expanded="false"><span data-i18n="faq.q9">Do parents see the full portfolio?</span><span class="faq-icon" aria-hidden="true">+</span></button><div class="faq-a"><p data-i18n="faq.a9">Yes. Parents have real-time access to their child's full development portfolio, including benchmark progression, teacher notes and assessment history.</p></div></div>
+      <div class="faq-item"><button class="faq-q" aria-expanded="false"><span data-i18n="faq.q10">What payment types are supported?</span><span class="faq-icon" aria-hidden="true">+</span></button><div class="faq-a"><p data-i18n="faq.a10">Monthly membership fees with a proof-upload and admin review workflow, and one-time charges (competition fees, materials, events) targeted to individuals, groups or the whole organization.</p></div></div>
+      <div class="faq-item"><button class="faq-q" aria-expanded="false"><span data-i18n="faq.q11">Is there a web version?</span><span class="faq-icon" aria-hidden="true">+</span></button><div class="faq-a"><p data-i18n="faq.a11">All Mighty Sync is a mobile-first application available on iOS and Android. Core features are designed and optimized for mobile use.</p></div></div>
+      <div class="faq-item"><button class="faq-q" aria-expanded="false"><span data-i18n="faq.q12">What languages does the app support?</span><span class="faq-icon" aria-hidden="true">+</span></button><div class="faq-a"><p data-i18n="faq.a12">English, Bosnian, Croatian, Serbian, and German. The language can be set per user independently of the organization language.</p></div></div>
+      <div class="faq-item"><button class="faq-q" aria-expanded="false"><span data-i18n="faq.q13">Can we export financial reports?</span><span class="faq-icon" aria-hidden="true">+</span></button><div class="faq-a"><p data-i18n="faq.a13">Yes. Admins have access to a financial overview and payment history they can review and export.</p></div></div>
+      <div class="faq-item"><button class="faq-q" aria-expanded="false"><span data-i18n="faq.q14">What happens if I need support after setup?</span><span class="faq-icon" aria-hidden="true">+</span></button><div class="faq-a"><p data-i18n="faq.a14">Our team remains available. For day-to-day operations your admin is fully independent, but we are reachable if something unexpected comes up.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact fade-section" id="contact-section">
   <div class="container">
     <div>
       <h2 data-i18n="contact.title">Imate li pitanja?</h2>
@@ -151,28 +536,92 @@
   </div>
 </section>
 
-<!-- Footer -->
+<!-- FINAL CTA (dark) -->
+<section class="final-cta fade-section">
+  <div class="container">
+    <h2 data-i18n="cta.heading">Spend more time developing people. Spend less time on paperwork.</h2>
+    <p data-i18n="cta.sub">Whether you lead a football academy, dance school, drama studio, music school or any other extracurricular organization — All Mighty Sync connects every part of your operation so you can focus on what actually matters.</p>
+    <div class="cta-btns">
+      <a href="#contact-section" class="btn-primary btn-primary--cream" data-i18n="cta.demo">Request a Demo</a>
+      <span class="store-btn store-btn--ghost is-disabled" aria-disabled="true">
+        <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true"><path d="M17.564 12.713c-.024-2.43 1.984-3.598 2.075-3.654-1.131-1.654-2.892-1.881-3.518-1.907-1.498-.151-2.924.882-3.687.882-.762 0-1.937-.86-3.187-.836-1.641.024-3.155.953-4.001 2.42-1.704 2.953-.436 7.32 1.225 9.715.81 1.171 1.776 2.488 3.044 2.441 1.222-.05 1.683-.79 3.16-.79 1.476 0 1.893.79 3.187.764 1.316-.024 2.149-1.196 2.953-2.371.93-1.36 1.314-2.677 1.337-2.745-.029-.012-2.566-.985-2.588-3.919zM15.18 5.475c.677-.82 1.131-1.96.998-3.092-.965.039-2.137.643-2.836 1.461-.626.726-1.171 1.886-1.024 2.998 1.078.082 2.18-.547 2.862-1.367z"/></svg>
+        <span><span class="small" data-i18n="store.apple.small">Download on</span><span class="big" data-i18n="store.apple.big">App Store</span></span>
+        <a href="#contact-section" class="store-tooltip" data-i18n="store.tooltip">Or request a demo</a>
+      </span>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
 <footer class="footer">
   <div class="container">
-    <p class="partners-label" data-i18n="footer.supportedBy">Podržani od</p>
-    <div class="partner-logos">
-      <a href="https://f787.ba/" target="_blank" rel="noopener noreferrer">
-        <div class="partner-logo-dark" id="foundation-787-logo">
-          <img src="images/foundation-787-logo.svg" alt="Foundation 787" />
-        </div>
-      </a>
-      <!-- INCONVENIENCE STORE - hidden until ready -->
-      <!--
-      <div class="partner-logo-dark" id="inconvenience-store-logo">
-        <img src="images/inconvenience-store-logo-white.png" alt="Inconvenience Store" />
+    <div class="footer-cols">
+      <div class="footer-col footer-col--brand">
+        <img src="images/logo.svg" alt="All Mighty Sync" class="footer-logo" />
+        <span class="footer-brand-name">All Mighty Sync</span>
+        <p class="footer-tagline" data-i18n="footer.tagline">Built for extracurricular organizations. Built in Sarajevo.</p>
       </div>
-      -->
+      <div class="footer-col">
+        <div class="footer-col-title" data-i18n="footer.col.product">Product</div>
+        <ul class="footer-links">
+          <li><a href="#features-section" data-i18n="nav.features">Features</a></li>
+          <li><a href="#roles-section" data-i18n="nav.roles">Roles</a></li>
+          <li><a href="#get-started-section" data-i18n="nav.getStarted">Get Started</a></li>
+          <li><a href="#faq-section" data-i18n="footer.faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-title" data-i18n="footer.col.contact">Contact</div>
+        <ul class="footer-links footer-links--plain">
+          <li>info@allmightysync.com</li>
+          <li>+387 61 71 27 76</li>
+          <li data-i18n="contact.locationValue">Sarajevo, Bosnia and Herzegovina</li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-title" data-i18n="footer.col.download">Download</div>
+        <div class="footer-store-btns">
+          <span class="store-btn store-btn--small is-disabled" aria-disabled="true">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16" aria-hidden="true"><path d="M17.564 12.713c-.024-2.43 1.984-3.598 2.075-3.654-1.131-1.654-2.892-1.881-3.518-1.907-1.498-.151-2.924.882-3.687.882-.762 0-1.937-.86-3.187-.836-1.641.024-3.155.953-4.001 2.42-1.704 2.953-.436 7.32 1.225 9.715.81 1.171 1.776 2.488 3.044 2.441 1.222-.05 1.683-.79 3.16-.79 1.476 0 1.893.79 3.187.764 1.316-.024 2.149-1.196 2.953-2.371.93-1.36 1.314-2.677 1.337-2.745-.029-.012-2.566-.985-2.588-3.919zM15.18 5.475c.677-.82 1.131-1.96.998-3.092-.965.039-2.137.643-2.836 1.461-.626.726-1.171 1.886-1.024 2.998 1.078.082 2.18-.547 2.862-1.367z"/></svg>
+            <span><span class="small" data-i18n="store.apple.small">Download on</span><span class="big" data-i18n="store.apple.big">App Store</span></span>
+            <a href="#contact-section" class="store-tooltip" data-i18n="store.tooltip">Or request a demo</a>
+          </span>
+          <span class="store-btn store-btn--small is-disabled" aria-disabled="true">
+            <svg viewBox="0 0 512 512" fill="currentColor" width="16" height="16" aria-hidden="true"><path d="M325.3 234.3 104.6 13l280.8 161.2-60.1 60.1zM47 0c-13 6.8-21 19.4-21 35.7v440.6c0 16.3 8 28.9 21 35.7l256.4-256L47 0zm425.2 225.6-58.9-34.1-65.7 64.5 65.7 64.5 60.1-34.1c18-14.3 18-46.5-1.2-60.8zM104.6 499 385.4 337.8l-60.1-60.1L104.6 499z"/></svg>
+            <span><span class="small" data-i18n="store.google.small">Download on</span><span class="big" data-i18n="store.google.big">Google Play</span></span>
+            <a href="#contact-section" class="store-tooltip" data-i18n="store.tooltip">Or request a demo</a>
+          </span>
+        </div>
+      </div>
     </div>
-    <div class="copyright" data-i18n="footer.copyright">© 2026 All Mighty Sync. Sva prava zadržana.</div>
+    <div class="footer-bottom">
+      <div class="footer-partners">
+        <span class="partners-label" data-i18n="footer.supportedBy">Supported by</span>
+        <a href="https://f787.ba/" target="_blank" rel="noopener noreferrer">
+          <div class="partner-logo-dark" id="foundation-787-logo">
+            <img src="images/foundation-787-logo.svg" alt="Foundation 787" />
+          </div>
+        </a>
+        <!-- INCONVENIENCE STORE - hidden until ready -->
+        <!--
+        <div class="partner-logo-dark" id="inconvenience-store-logo">
+          <img src="images/inconvenience-store-logo-white.png" alt="Inconvenience Store" />
+        </div>
+        -->
+      </div>
+      <div class="footer-bottom-right">
+        <span class="copyright" data-i18n="footer.copyright">© 2026 All Mighty Sync. All rights reserved.</span>
+        <div class="lang-switcher" role="group" aria-label="Language">
+          <button type="button" class="lang-btn" data-lang="bs">BS</button>
+          <button type="button" class="lang-btn" data-lang="en">EN</button>
+          <button type="button" class="lang-btn" data-lang="de">DE</button>
+        </div>
+      </div>
+    </div>
   </div>
 </footer>
 
-<script src="js/i18n.js?v=6"></script>
-<script src="js/script.js?v=6"></script>
+<script src="js/i18n.js?v=7"></script>
+<script src="js/script.js?v=7"></script>
 </body>
 </html>
