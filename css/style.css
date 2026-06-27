@@ -937,7 +937,12 @@ a { text-decoration: none; }
   background: transparent;
 }
 .faq-section .section-heading { margin-bottom: 40px; }
-.faq-list { max-width: 720px; }
+.faq-cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 48px;
+}
+.faq-list { width: 100%; }
 .faq-item { border-bottom: 1px solid var(--border); }
 .faq-q {
   width: 100%;
@@ -1172,6 +1177,7 @@ a { text-decoration: none; }
   .disc-content { padding: 24px 20px; }
   .comparison-table th, .comparison-table td { padding: 10px 12px; }
   .container { padding: 0 16px; }
+  .faq-cols { grid-template-columns: 1fr; gap: 0; }
 }
 
 @media (max-width: 600px) {
