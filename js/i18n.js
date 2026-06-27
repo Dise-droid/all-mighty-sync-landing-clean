@@ -14,6 +14,7 @@
             "hero.trust4": "✓ Raspored",
             "hero.trust5": "✓ Obavijesti",
             "hero.trust6": "✓ Izvještaji",
+            "hero.comingSoon": "Uskoro na:",
             "hero.requestDemo": "Zatražite Demo",
 
             "store.apple.small": "Preuzmite na",
@@ -329,6 +330,7 @@
             "hero.trust4": "✓ Scheduling",
             "hero.trust5": "✓ Notifications",
             "hero.trust6": "✓ Reports",
+            "hero.comingSoon": "Soon on:",
             "hero.requestDemo": "Request Demo",
 
             "store.apple.small": "Download on",
@@ -644,6 +646,7 @@
             "hero.trust4": "✓ Terminplanung",
             "hero.trust5": "✓ Benachrichtigungen",
             "hero.trust6": "✓ Berichte",
+            "hero.comingSoon": "Bald auf:",
             "hero.requestDemo": "Demo Anfragen",
 
             "store.apple.small": "Laden im",
