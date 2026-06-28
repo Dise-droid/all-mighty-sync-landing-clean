@@ -37,7 +37,7 @@
 
             "timeline.label": "DAN U ŽIVOTU",
             "timeline.heading": "Tipičan dan s All Mighty Sync",
-            "timeline.730": "Administrator unosi malu izmjenu u četvrtakov raspored. U roku od sekundi, nastavnici, roditelji i polaznici na koje se promjena odnosi su automatski obaviješteni.",
+            "timeline.730": "Administartor unosi malu izmjenu u rasporedu od četvrtka. U roku od sekundi, nastavnici, roditelji i polaznici na koje se promjena odnosi su automatski obaviješteni.",
             "timeline.900": "Počinje jutarnji trening. Nastavnik otvara prisustvo na telefonu i za manje od minute bilježi sve prisutne. Roditelji odsutnih polaznika dobivaju trenutnu obavijest.",
             "timeline.1030": "Nakon sesije brzine i agilnosti, nastavnik upisuje rezultate svakog polaznika. Novi benchmark podaci odmah se dodaju u njihov razvojni portfolio, što napredak čini lako vidljivim kroz vrijeme.",
             "timeline.1200": "Roditelj šalje dokaz o uplati za ovomjesečnu članarinu. Administrator je obaviješten i pregleda uplatu kao dio svakodnevnog toka rada.",
