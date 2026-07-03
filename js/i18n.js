@@ -175,7 +175,6 @@
             "portfolio.card3.val": "2. Mjesto",
             "portfolio.card4.label": "AI Prijedlog",
             "portfolio.card4.text": "Brzina napreduje, ali izdržljivost stagnira - preporučujemo dodatni fokus na kondicioni trening ovog mjeseca.",
-            "portfolio.screenshotPlaceholder": "Snimak ekrana portfolija - uskoro",
 
             "ecosystem.label": "JEDAN EKOSISTEM",
             "ecosystem.heading": "Jedan nalog. Svaka organizacija. Sve povezano.",
@@ -467,7 +466,6 @@
             "portfolio.card3.val": "2nd place",
             "portfolio.card4.label": "AI Suggestion",
             "portfolio.card4.text": "Speed is improving, but endurance is plateauing - we recommend extra conditioning work this month.",
-            "portfolio.screenshotPlaceholder": "Portfolio screenshot - coming soon",
 
             "ecosystem.label": "ONE ECOSYSTEM",
             "ecosystem.heading": "One account. Every organization. Everything connected.",
@@ -759,7 +757,6 @@
             "portfolio.card3.val": "2. Platz",
             "portfolio.card4.label": "KI-Vorschlag",
             "portfolio.card4.text": "Die Geschwindigkeit verbessert sich, aber die Ausdauer stagniert - wir empfehlen diesen Monat zusätzliches Konditionstraining.",
-            "portfolio.screenshotPlaceholder": "Portfolio-Screenshot - folgt in Kürze",
 
             "ecosystem.label": "EIN ÖKOSYSTEM",
             "ecosystem.heading": "Ein Konto. Jede Organisation. Alles verbunden.",
