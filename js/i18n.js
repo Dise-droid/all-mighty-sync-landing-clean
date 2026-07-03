@@ -291,7 +291,7 @@
             "faq.q13": "Možemo li izvesti finansijske izvještaje?",
             "faq.a13": "Da. Admini imaju pristup finansijskom pregledu i historiji plaćanja koju mogu pregledati i izvesti.",
             "faq.q14": "Šta ako trebamo podršku nakon postavljanja?",
-            "faq.a14": "Naš tim ostaje dostupan. Za svakodnevne operacije vaš admin je potpuno samostalan, ali dostupni smo ako se pojavi nešto neočekivano.",
+            "faq.a14": "Naš tim je dostupan 24/7. Za svakodnevne operacije vaš admin je potpuno samostalan, ali mi smo tu u svakom trenutku ako se pojavi nešto neočekivano.",
 
             "cta.heading": "Provedite više vremena u razvoju ljudi. Manje u papirima.",
             "cta.sub": "Bez obzira vodite li fudbalsku akademiju, školu plesa, dramski studio, muzičku školu ili bilo koju drugu vannastavnu organizaciju - All Mighty Sync povezuje svaki dio vaše operacije kako biste se mogli fokusirati na ono što zaista vrijedi.",
@@ -611,7 +611,7 @@
             "faq.q13": "Can we export financial reports?",
             "faq.a13": "Yes. Admins have access to a financial overview and payment history they can review and export.",
             "faq.q14": "What happens if I need support after setup?",
-            "faq.a14": "Our team remains available. For day-to-day operations your admin is fully independent, but we are reachable if something unexpected comes up.",
+            "faq.a14": "Our team is available 24/7. For day-to-day operations your admin is fully independent, but we're reachable around the clock if something unexpected comes up.",
 
             "cta.heading": "Spend more time developing people. Spend less time on paperwork.",
             "cta.sub": "Whether you lead a football academy, dance school, drama studio, music school or any other extracurricular organization - All Mighty Sync connects every part of your operation so you can focus on what actually matters.",
@@ -931,7 +931,7 @@
             "faq.q13": "Können wir Finanzberichte exportieren?",
             "faq.a13": "Ja. Admins haben Zugang zu einer Finanzübersicht und Zahlungshistorie, die sie einsehen und exportieren können.",
             "faq.q14": "Was passiert wenn ich nach der Einrichtung Unterstützung benötige?",
-            "faq.a14": "Unser Team bleibt verfügbar. Für den täglichen Betrieb ist Ihr Admin vollständig eigenständig, aber wir sind erreichbar wenn etwas Unerwartetes auftritt.",
+            "faq.a14": "Unser Team ist rund um die Uhr erreichbar. Für den täglichen Betrieb ist Ihr Admin vollständig eigenständig, aber wir sind jederzeit erreichbar, wenn etwas Unerwartetes auftritt.",
 
             "cta.heading": "Verbringen Sie mehr Zeit mit der Entwicklung von Menschen. Weniger Zeit mit Papierkram.",
             "cta.sub": "Ob Sie eine Fußballakademie, Tanzschule, Theaterstudio, Musikschule oder eine andere außerschulische Organisation leiten - All Mighty Sync verbindet jeden Teil Ihrer Operation, damit Sie sich auf das konzentrieren können, was wirklich wichtig ist.",
