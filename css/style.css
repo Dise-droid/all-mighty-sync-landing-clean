@@ -511,6 +511,20 @@ a { text-decoration: none; }
   color: var(--success);
   font-weight: 700;
 }
+.feature-taglist {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.feature-tag-chip {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--indigo);
+  background: rgba(45,45,140,0.07);
+  padding: 6px 12px;
+  border-radius: 999px;
+  line-height: 1.4;
+}
 
 /* App preview cards */
 .app-preview {
@@ -691,6 +705,21 @@ a { text-decoration: none; }
   line-height: 1.5;
 }
 .role-list li::before { content: "✓"; position: absolute; left: 0; color: var(--success); font-weight: 700; }
+.role-tags {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  gap: 8px;
+  flex: 1;
+}
+.role-tag {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--indigo);
+  background: rgba(45,45,140,0.07);
+  padding: 5px 12px;
+  border-radius: 999px;
+}
 .role-result {
   font-size: 13px;
   color: var(--indigo);

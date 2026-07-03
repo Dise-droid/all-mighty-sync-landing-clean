@@ -95,7 +95,6 @@
         <div class="tool-chip"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg> <span data-i18n="problem.tool4">Email</span></div>
         <div class="tool-chip"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13.8 19.79 19.79 0 0 1 1.61 5.18 2 2 0 0 1 3.59 3h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 10.54a16 16 0 0 0 6.55 6.55l1.61-1.61a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg> <span data-i18n="problem.tool5">Phone Calls</span></div>
         <div class="tool-chip"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg> <span data-i18n="problem.tool6">Calendar App</span></div>
-        <div class="tool-chip"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg> <span data-i18n="problem.tool7">Manual Invoices</span></div>
       </div>
       <div class="problem-converge">
         <div class="converge-arrow">↓</div>
@@ -156,13 +155,12 @@
         <div class="feature-tag" data-i18n="features.block1.tag">Administration</div>
         <h3 data-i18n="features.block1.title">Organization Management</h3>
         <p data-i18n="features.block1.body">Everything in one control center. Invite members, create groups, configure roles and permissions, review payments, and broadcast announcements - all from your phone.</p>
-        <ul class="feature-list">
-          <li data-i18n="features.block1.li1">User invitations and role assignment</li>
-          <li data-i18n="features.block1.li2">Group creation with teachers, students and schedules</li>
-          <li data-i18n="features.block1.li3">Discipline configuration and custom terminology</li>
-          <li data-i18n="features.block1.li4">Financial overview and reporting</li>
-          <li data-i18n="features.block1.li5">Organization-wide attendance summaries</li>
-        </ul>
+        <div class="feature-taglist">
+          <span class="feature-tag-chip" data-i18n="features.block1.tag1">Member records &amp; management</span>
+          <span class="feature-tag-chip" data-i18n="features.block1.tag2">Membership payments</span>
+          <span class="feature-tag-chip" data-i18n="features.block1.tag3">Attendance &amp; results per group and individual</span>
+          <span class="feature-tag-chip" data-i18n="features.block1.tag4">Reports on every metric</span>
+        </div>
       </div>
     </div>
 
@@ -286,13 +284,12 @@
         </div>
         <h3 data-i18n="roles.admin.title">Administrators</h3>
         <p class="role-intro" data-i18n="roles.admin.intro">You built this organization. Now run it without administrative chaos.</p>
-        <ul class="role-list">
-          <li data-i18n="roles.admin.li1">Manage every member and their role</li>
-          <li data-i18n="roles.admin.li2">Create groups, assign teachers and students</li>
-          <li data-i18n="roles.admin.li3">Track attendance across all groups</li>
-          <li data-i18n="roles.admin.li4">Review payments with one-tap approval</li>
-          <li data-i18n="roles.admin.li5">Financial overview and full reporting</li>
-        </ul>
+        <div class="role-tags">
+          <span class="role-tag" data-i18n="roles.admin.tag1">User management</span>
+          <span class="role-tag" data-i18n="roles.admin.tag2">Finance</span>
+          <span class="role-tag" data-i18n="roles.admin.tag3">Attendance</span>
+          <span class="role-tag" data-i18n="roles.admin.tag4">Reports</span>
+        </div>
         <div class="role-result"><span data-i18n="roles.admin.result">You spend your time building the organization. Not chasing spreadsheets.</span></div>
       </div>
 
@@ -302,13 +299,12 @@
         </div>
         <h3 data-i18n="roles.teacher.title">Teachers &amp; Coaches</h3>
         <p class="role-intro" data-i18n="roles.teacher.intro">Everything you need to run a class is on your phone.</p>
-        <ul class="role-list">
-          <li data-i18n="roles.teacher.li1">Mark attendance in under a minute</li>
-          <li data-i18n="roles.teacher.li2">Log benchmark results after training</li>
-          <li data-i18n="roles.teacher.li3">Write student progress notes</li>
-          <li data-i18n="roles.teacher.li4">Upload group materials</li>
-          <li data-i18n="roles.teacher.li5">Request substitutes with automated notification</li>
-        </ul>
+        <div class="role-tags">
+          <span class="role-tag" data-i18n="roles.teacher.tag1">Attendance log</span>
+          <span class="role-tag" data-i18n="roles.teacher.tag2">Materials</span>
+          <span class="role-tag" data-i18n="roles.teacher.tag3">Substitutes</span>
+          <span class="role-tag" data-i18n="roles.teacher.tag4">Schedules</span>
+        </div>
         <div class="role-result"><span data-i18n="roles.teacher.result">Less time on admin. More time with students.</span></div>
       </div>
 
@@ -318,13 +314,12 @@
         </div>
         <h3 data-i18n="roles.parent.title">Parents</h3>
         <p class="role-intro" data-i18n="roles.parent.intro">You trust us with your child. We make sure you're never left in the dark.</p>
-        <ul class="role-list">
-          <li data-i18n="roles.parent.li1">Instant notification when your child is absent</li>
-          <li data-i18n="roles.parent.li2">Live view of schedule including last-minute changes</li>
-          <li data-i18n="roles.parent.li3">Track your child's development portfolio</li>
-          <li data-i18n="roles.parent.li4">Upload payment proof and track approval</li>
-          <li data-i18n="roles.parent.li5">Follow multiple children across organizations</li>
-        </ul>
+        <div class="role-tags">
+          <span class="role-tag" data-i18n="roles.parent.tag1">Track your children</span>
+          <span class="role-tag" data-i18n="roles.parent.tag2">Notifications</span>
+          <span class="role-tag" data-i18n="roles.parent.tag3">Materials</span>
+          <span class="role-tag" data-i18n="roles.parent.tag4">Attendance</span>
+        </div>
         <div class="role-result"><span data-i18n="roles.parent.result">Complete visibility into your child's progress, without endless messages to the teacher.</span></div>
       </div>
 
@@ -334,13 +329,12 @@
         </div>
         <h3 data-i18n="roles.student.title">Students</h3>
         <p class="role-intro" data-i18n="roles.student.intro">Your schedule, your progress, your organization - all in one place.</p>
-        <ul class="role-list">
-          <li data-i18n="roles.student.li1">Always know when and where your next class is</li>
-          <li data-i18n="roles.student.li2">Follow your own development portfolio</li>
-          <li data-i18n="roles.student.li3">See benchmark results and your progress over time</li>
-          <li data-i18n="roles.student.li4">Access shared learning materials</li>
-          <li data-i18n="roles.student.li5">Be part of an organization that tracks your growth</li>
-        </ul>
+        <div class="role-tags">
+          <span class="role-tag" data-i18n="roles.student.tag1">Schedule</span>
+          <span class="role-tag" data-i18n="roles.student.tag2">Assignments</span>
+          <span class="role-tag" data-i18n="roles.student.tag3">Materials</span>
+          <span class="role-tag" data-i18n="roles.student.tag4">Tournaments</span>
+        </div>
         <div class="role-result"><span data-i18n="roles.student.result">You know exactly where you stand. And you can see yourself getting better.</span></div>
       </div>
 
@@ -442,23 +436,16 @@
       <table class="comparison-table">
         <thead>
           <tr>
-            <th data-i18n="comparison.th.feature">Feature</th>
-            <th data-i18n="comparison.th.generic">Generic Alternatives</th>
-            <th class="ams-col" data-i18n="comparison.th.ams">All Mighty Sync</th>
+            <th data-i18n="comparison.th.today">Today</th>
+            <th class="ams-col" data-i18n="comparison.th.ams">AMSync</th>
           </tr>
         </thead>
         <tbody>
-          <tr><td data-i18n="comp.r1.f">Built for</td><td data-i18n="comp.r1.g">General education</td><td class="ams-col" data-i18n="comp.r1.a">Extracurricular organizations</td></tr>
-          <tr><td data-i18n="comp.r2.f">Disciplines</td><td data-i18n="comp.r2.g">Rigid structure</td><td class="ams-col" data-i18n="comp.r2.a">Adapts to your discipline</td></tr>
-          <tr><td data-i18n="comp.r3.f">Terminology</td><td data-i18n="comp.r3.g">Fixed</td><td class="ams-col" data-i18n="comp.r3.a">Fully customizable</td></tr>
-          <tr><td data-i18n="comp.r4.f">Organizations per account</td><td data-i18n="comp.r4.g">One</td><td class="ams-col" data-i18n="comp.r4.a">Multiple - for all roles</td></tr>
-          <tr><td data-i18n="comp.r5.f">Student development</td><td data-i18n="comp.r5.g">Attendance only</td><td class="ams-col" data-i18n="comp.r5.a">Full long-term portfolio</td></tr>
-          <tr><td data-i18n="comp.r6.f">Payments</td><td data-i18n="comp.r6.g">Manual or external</td><td class="ams-col" data-i18n="comp.r6.a">Built-in - membership + charges</td></tr>
-          <tr><td data-i18n="comp.r7.f">Communication</td><td data-i18n="comp.r7.g">Email</td><td class="ams-col" data-i18n="comp.r7.a">Real-time push + in-app</td></tr>
-          <tr><td data-i18n="comp.r8.f">Parent visibility</td><td data-i18n="comp.r8.g">Limited</td><td class="ams-col" data-i18n="comp.r8.a">Full real-time access</td></tr>
-          <tr><td data-i18n="comp.r9.f">Teacher substitution</td><td data-i18n="comp.r9.g">Phone calls</td><td class="ams-col" data-i18n="comp.r9.a">Automated request chain</td></tr>
-          <tr><td data-i18n="comp.r10.f">Reporting</td><td data-i18n="comp.r10.g">Spreadsheets</td><td class="ams-col" data-i18n="comp.r10.a">Live dashboard + reports</td></tr>
-          <tr><td data-i18n="comp.r11.f">Languages</td><td data-i18n="comp.r11.g">Usually one</td><td class="ams-col">EN · BS · HR · SR · DE</td></tr>
+          <tr><td data-i18n="comp2.r1.today">WhatsApp</td><td class="ams-col" data-i18n="comp2.r1.ams">One app</td></tr>
+          <tr><td data-i18n="comp2.r2.today">Excel</td><td class="ams-col" data-i18n="comp2.r2.ams">Automatic reports</td></tr>
+          <tr><td data-i18n="comp2.r3.today">Paper</td><td class="ams-col" data-i18n="comp2.r3.ams">Digital attendance</td></tr>
+          <tr><td data-i18n="comp2.r4.today">Phone calls</td><td class="ams-col" data-i18n="comp2.r4.ams">Push notifications</td></tr>
+          <tr><td data-i18n="comp2.r5.today">Multiple systems</td><td class="ams-col" data-i18n="comp2.r5.ams">Everything in one place</td></tr>
         </tbody>
       </table>
     </div>
@@ -627,7 +614,7 @@
   </div>
 </footer>
 
-<script src="js/i18n.js?v=16"></script>
+<script src="js/i18n.js?v=17"></script>
 <script src="js/script.js?v=16"></script>
 </body>
 </html>
