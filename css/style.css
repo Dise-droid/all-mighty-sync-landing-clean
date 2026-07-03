@@ -953,6 +953,26 @@ a { text-decoration: none; }
   color: var(--indigo);
   background: rgba(45,45,140,0.06);
 }
+.quick-compare {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 14px;
+  margin: 20px 0 28px;
+}
+.quick-compare-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  background: rgba(254, 251, 240, 0.82);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 7px 14px;
+}
+.qc-before { color: var(--sub); }
+.qc-arrow { color: var(--border); }
+.qc-after { color: var(--indigo); }
 
 /* ========== FOUNDERS ========== */
 .founders-section {
