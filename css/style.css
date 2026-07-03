@@ -793,6 +793,32 @@ a { text-decoration: none; }
 .abar-fill { height: 100%; background: var(--orange); border-radius: 3px; }
 .milestone-icon { color: var(--orange); display: flex; align-items: center; }
 .milestone-val { font-size: 18px; font-weight: 800; color: var(--orange); margin-left: auto; }
+.portfolio-screenshot-placeholder {
+  border: 1.5px dashed var(--border);
+  border-radius: 16px;
+  padding: 40px 22px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: var(--sub);
+  text-align: center;
+  font-size: 13px;
+  font-weight: 600;
+}
+.portfolio-card--ai {
+  background: linear-gradient(135deg, rgba(45,45,140,0.06), rgba(124,58,237,0.06));
+  border-color: rgba(45,45,140,0.18);
+}
+.ai-suggestion-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  color: var(--indigo);
+}
+.ai-suggestion-row svg { flex-shrink: 0; margin-top: 1px; }
+.ai-suggestion-row p { font-size: 13px; color: var(--ink); line-height: 1.6; margin: 0; }
 
 /* ========== ECOSYSTEM ========== */
 .ecosystem-section {
