@@ -590,6 +590,11 @@ a { text-decoration: none; }
   height: auto;
   display: block;
 }
+.notifications-screenshot {
+  width: 100%;
+  height: auto;
+  display: block;
+}
 .payment-rows { display: flex; flex-direction: column; gap: 10px; }
 .payment-row {
   display: flex;
