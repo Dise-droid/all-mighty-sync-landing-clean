@@ -184,6 +184,7 @@ a { text-decoration: none; }
   box-shadow: 0 10px 24px rgba(232,142,36,0.35);
   max-width: 92%;
   margin-top: -8px;
+  transform: translateX(-24px);
 }
 .hero-content { order: 2; }
 .hero-content h1 {
@@ -1329,6 +1330,7 @@ a { text-decoration: none; }
   .trust-row { justify-content: center; }
   .store-buttons { justify-content: center; }
   .hero-visual img { width: 90%; max-width: 500px; transform: none; }
+  .promo-badge { transform: none; }
   .feature-block { grid-template-columns: 1fr; gap: 32px; }
   .feature-block--img-left .feature-block-visual,
   .feature-block--img-right .feature-block-visual { order: 1; }
