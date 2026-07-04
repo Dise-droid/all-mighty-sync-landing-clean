@@ -689,7 +689,6 @@ a { text-decoration: none; }
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 24px;
-  align-items: start;
 }
 .role-card {
   background: rgba(254, 251, 240, 0.82);
