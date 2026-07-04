@@ -238,4 +238,38 @@
       closeAllTooltips();
     }
   });
+
+  /* ===== LAUNCH COUNTDOWN ===== */
+  document.querySelectorAll(".launch-countdown").forEach(function (el) {
+    const target = new Date(el.dataset.launch).getTime();
+    const daysEl = el.querySelector('[data-cd="days"]');
+    const hoursEl = el.querySelector('[data-cd="hours"]');
+    const minutesEl = el.querySelector('[data-cd="minutes"]');
+    const secondsEl = el.querySelector('[data-cd="seconds"]');
+
+    function pad(n) {
+      return String(n).padStart(2, "0");
+    }
+
+    let timer;
+
+    function tick() {
+      const diff = target - Date.now();
+
+      if (diff <= 0) {
+        el.classList.add("is-live");
+        clearInterval(timer);
+        return;
+      }
+
+      const totalSeconds = Math.floor(diff / 1000);
+      daysEl.textContent = pad(Math.floor(totalSeconds / 86400));
+      hoursEl.textContent = pad(Math.floor((totalSeconds % 86400) / 3600));
+      minutesEl.textContent = pad(Math.floor((totalSeconds % 3600) / 60));
+      secondsEl.textContent = pad(totalSeconds % 60);
+    }
+
+    tick();
+    timer = setInterval(tick, 1000);
+  });
 })();
