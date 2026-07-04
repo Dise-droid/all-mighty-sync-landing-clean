@@ -757,7 +757,7 @@ a { text-decoration: none; }
 }
 .portfolio-inner {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1.4fr;
   gap: 64px;
   align-items: center;
 }
@@ -778,60 +778,11 @@ a { text-decoration: none; }
   flex-direction: column;
   gap: 16px;
 }
-.portfolio-card {
-  background: rgba(254, 251, 240, 0.82);
-  border: 1px solid var(--border);
-  border-radius: 16px;
-  padding: 20px 22px;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.05);
-}
-.portfolio-card--milestone {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-}
-.portfolio-card-label {
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: 0.5px;
-  color: var(--sub);
-  margin-bottom: 12px;
-  text-transform: uppercase;
-}
-.progress-timeline {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-.pt-entry { display: flex; flex-direction: column; align-items: center; gap: 4px; }
-.pt-date { font-size: 11px; color: var(--sub); font-weight: 600; }
-.pt-val { font-size: 18px; font-weight: 800; color: var(--ink); }
-.pt-entry--best .pt-val { color: var(--success); }
-.pt-arrow { font-size: 16px; color: var(--border); }
-.assessment-rows { display: flex; flex-direction: column; gap: 10px; }
-.assessment-row { display: grid; grid-template-columns: 100px 1fr 40px; align-items: center; gap: 10px; font-size: 13px; color: var(--muted); }
-.abar { height: 5px; background: var(--border); border-radius: 3px; }
-.abar-fill { height: 100%; background: var(--orange); border-radius: 3px; }
-.milestone-icon { color: var(--orange); display: flex; align-items: center; }
-.milestone-val { font-size: 18px; font-weight: 800; color: var(--orange); margin-left: auto; }
 .portfolio-screenshot {
   width: 100%;
   height: auto;
   display: block;
-  margin-bottom: 4px;
 }
-.portfolio-card--ai {
-  background: linear-gradient(135deg, rgba(45,45,140,0.06), rgba(124,58,237,0.06));
-  border-color: rgba(45,45,140,0.18);
-}
-.ai-suggestion-row {
-  display: flex;
-  align-items: flex-start;
-  gap: 10px;
-  color: var(--indigo);
-}
-.ai-suggestion-row svg { flex-shrink: 0; margin-top: 1px; }
-.ai-suggestion-row p { font-size: 13px; color: var(--ink); line-height: 1.6; margin: 0; }
 
 /* ========== ECOSYSTEM ========== */
 .ecosystem-section {
