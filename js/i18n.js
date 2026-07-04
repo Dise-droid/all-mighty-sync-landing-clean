@@ -989,6 +989,28 @@
         });
     });
 
-    const savedLang = localStorage.getItem("amsync-lang") || "bs";
+    function detectLanguage() {
+        const browserLangs = (navigator.languages && navigator.languages.length)
+            ? navigator.languages
+            : [navigator.language || navigator.userLanguage || "en"];
+
+        for (let i = 0; i < browserLangs.length; i++) {
+            const lang = browserLangs[i].toLowerCase();
+            // Bosnian/Croatian/Serbian all read fine in Bosnian - closest supported match
+            if (lang.startsWith("bs") || lang.startsWith("hr") || lang.startsWith("sr")) {
+                return "bs";
+            }
+            if (lang.startsWith("de")) {
+                return "de";
+            }
+            if (lang.startsWith("en")) {
+                return "en";
+            }
+        }
+        // Everywhere else (Americas, Africa, Asia, rest of Europe) defaults to English
+        return "en";
+    }
+
+    const savedLang = localStorage.getItem("amsync-lang") || detectLanguage();
     applyLanguage(savedLang);
 })();
