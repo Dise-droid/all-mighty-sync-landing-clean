@@ -954,6 +954,32 @@
     });
 
     function detectLanguage() {
+        // Timezone reflects where the visitor actually is, unlike the browser's
+        // display-language setting - many Balkan users browse in English despite
+        // limited fluency, so location wins over that setting when it's a clear signal.
+        let timeZone = "";
+        try {
+            timeZone = Intl.DateTimeFormat().resolvedOptions().timeZone || "";
+        } catch (e) {
+            timeZone = "";
+        }
+
+        const balkanZones = [
+            "Europe/Sarajevo", "Europe/Belgrade", "Europe/Zagreb",
+            "Europe/Podgorica", "Europe/Skopje", "Europe/Ljubljana"
+        ];
+        const germanZones = [
+            "Europe/Berlin", "Europe/Vienna", "Europe/Zurich", "Europe/Vaduz"
+        ];
+
+        if (balkanZones.indexOf(timeZone) !== -1) {
+            return "bs";
+        }
+        if (germanZones.indexOf(timeZone) !== -1) {
+            return "de";
+        }
+
+        // No clear location match - fall back to browser language as a secondary signal
         const browserLangs = (navigator.languages && navigator.languages.length)
             ? navigator.languages
             : [navigator.language || navigator.userLanguage || "en"];
