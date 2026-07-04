@@ -156,8 +156,10 @@ a { text-decoration: none; }
 .hero-visual {
   position: relative;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 12px;
   order: 1;
 }
 .hero-visual img {
@@ -166,6 +168,22 @@ a { text-decoration: none; }
   height: auto;
   transform: translateX(-6%);
   filter: drop-shadow(0 24px 40px rgba(0,0,0,0.15));
+}
+.promo-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: linear-gradient(135deg, var(--orange), var(--orange-light));
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  padding: 10px 24px;
+  border-radius: 999px;
+  box-shadow: 0 10px 24px rgba(232,142,36,0.35);
+  max-width: 92%;
+  margin-top: -8px;
 }
 .hero-content { order: 2; }
 .hero-content h1 {

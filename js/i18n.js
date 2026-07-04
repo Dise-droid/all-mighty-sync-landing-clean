@@ -22,6 +22,7 @@
             "countdown.seconds": "sek",
             "countdown.liveLabel": "Uživo smo! 🎉",
             "hero.requestDemo": "Zatražite Demo",
+            "hero.promo": "Prijavite se do 31.07.2026. i ostvarite 3 mjeseca besplatno.",
 
             "store.apple.small": "Preuzmite na",
             "store.apple.big": "App Store",
@@ -337,6 +338,7 @@
             "countdown.seconds": "sec",
             "countdown.liveLabel": "We're live! 🎉",
             "hero.requestDemo": "Request Demo",
+            "hero.promo": "Sign up by July 31, 2026 and get 3 months free.",
 
             "store.apple.small": "Download on",
             "store.apple.big": "App Store",
@@ -652,6 +654,7 @@
             "countdown.seconds": "Sek",
             "countdown.liveLabel": "Wir sind live! 🎉",
             "hero.requestDemo": "Demo Anfragen",
+            "hero.promo": "Melden Sie sich bis zum 31.07.2026 an und erhalten Sie 3 Monate gratis.",
 
             "store.apple.small": "Laden im",
             "store.apple.big": "App Store",
