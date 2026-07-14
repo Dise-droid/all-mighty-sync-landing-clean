@@ -131,7 +131,6 @@ function renderPage(page) {
   <link rel="stylesheet" href="/css/style.css?v=25" />
 
   <script src="/js/ga-config.js?v=1"></script>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NR4ZNJ0D7Y"></script>
 
   <script type="application/ld+json">
 ${JSON.stringify(jsonLd, null, 2)}
