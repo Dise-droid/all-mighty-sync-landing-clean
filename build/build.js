@@ -219,6 +219,28 @@ ${JSON.stringify(jsonLd, null, 2)}
         </ul>
       </div>
     </div>
+    <div class="footer-industries">
+      <div class="footer-col-title">Industries We Serve</div>
+      <div class="footer-industries-list">
+        <a href="/football-club-management-software/">Football Clubs &amp; Academies</a><span>&middot;</span>
+        <a href="/dance-studio-management-software/">Dance Studios</a><span>&middot;</span>
+        <a href="/drama-school-management-software/">Drama Schools</a><span>&middot;</span>
+        <a href="/music-school-management-software/">Music Schools</a><span>&middot;</span>
+        <a href="/martial-arts-club-management-software/">Martial Arts Clubs</a><span>&middot;</span>
+        <a href="/language-school-management-software/">Language Schools</a><span>&middot;</span>
+        <a href="/art-school-management-software/">Art Schools</a><span>&middot;</span>
+        <a href="/coding-robotics-management-software/">Coding &amp; Robotics</a><span>&middot;</span>
+        <a href="/basketball-club-management-software/">Basketball Clubs</a><span>&middot;</span>
+        <a href="/volleyball-club-management-software/">Volleyball Clubs</a><span>&middot;</span>
+        <a href="/tennis-academy-management-software/">Tennis Academies</a><span>&middot;</span>
+        <a href="/swimming-club-management-software/">Swimming Clubs</a><span>&middot;</span>
+        <a href="/gymnastics-club-management-software/">Gymnastics Clubs</a><span>&middot;</span>
+        <a href="/tutoring-center-management-software/">Tutoring Centers</a><span>&middot;</span>
+        <a href="/after-school-activity-management-software/">After-School Programs</a><span>&middot;</span>
+        <a href="/childrens-activity-center-management-software/">Children's Activity Centers</a><span>&middot;</span>
+        <a href="/multi-sport-academy-management-software/">Multi-Sport Academies</a>
+      </div>
+    </div>
     <div class="footer-bottom">
       <div class="footer-partners">
         <span class="partners-label">Supported by</span>

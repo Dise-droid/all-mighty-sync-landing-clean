@@ -10,7 +10,7 @@ module.exports = [
     ctaButton: "Book a Football Academy Demo",
     title: "Football Club Management Software for Academies & Clubs | All Mighty Sync",
     metaDescription: "Club management software built for football clubs and academies - attendance, player development tracking, match performance, parent communication and payments in one platform.",
-    h1: "Football Club Management Software",
+    h1: "Football Club & Academy Management Software",
     introLabel: "FOR FOOTBALL CLUBS & ACADEMIES",
     introBody: "All Mighty Sync is club management software built for football clubs, academies and youth development programs. It replaces the group chats, spreadsheets and paper attendance sheets most clubs run on with one platform covering training attendance, player progression, parent communication and club payments. Coaches log attendance and track sprint times, strength benchmarks, technical skill ratings and match performance so improvement is visible over weeks and months, not just session by session. Administrators manage teams, groups and membership payments from one dashboard, and parents get real-time updates instead of another group chat to follow. It's available as a mobile app for coaches, parents and players, alongside a web dashboard for administrators.",
     features: [
@@ -194,6 +194,213 @@ module.exports = [
       { q: "Does it work for both coding and robotics programs?", a: "Yes. Sessions, groups and skill tracking can be configured to match coding, robotics or general STEM programs." },
       { q: "How does membership payment tracking work?", a: "Administrators set up monthly membership fees or one-time charges, review payment proof uploads, and approve or reject payments with one tap - with a full financial history and dashboard." },
       { q: "Is All Mighty Sync a mobile app?", a: "Yes. All Mighty Sync is available as a mobile app for mentors, parents and students, alongside a web dashboard for administrators." }
+    ]
+  },
+  {
+    slug: "basketball-club-management-software",
+    ctaButton: "Book a Basketball Club Demo",
+    title: "Basketball Club Management Software | All Mighty Sync",
+    metaDescription: "Club management software for basketball clubs and academies - attendance, scheduling, membership payments, parent communication and custom progress tracking in one platform.",
+    h1: "Basketball Club Management Software",
+    introLabel: "FOR BASKETBALL CLUBS & ACADEMIES",
+    introBody: "All Mighty Sync is club management software built for basketball clubs and academies. It replaces the group chats, spreadsheets and paper attendance sheets most clubs run on with one platform covering training and game attendance, scheduling across teams and age groups, membership payments and parent communication. Every organization on All Mighty Sync defines its own evaluation categories, so coaches can track exactly what matters to their program - shooting percentage, defensive stats, conditioning benchmarks or anything else - instead of being forced into a generic template. It's available as a mobile app for coaches, parents and players, alongside a web dashboard for administrators.",
+    features: [
+      { title: "Training & game attendance", body: "QR check-in for practices and games, attendance history per player and per team, and reports on who's missing sessions." },
+      { title: "Custom progress tracking", body: "Define your own evaluation categories - shooting, defense, conditioning or anything else your program tracks - and log results per player over the season." },
+      { title: "Team & roster management", body: "Organize players into teams and age groups, assign coaches, and manage practice and game schedules from one place." },
+      { title: "Membership payments", body: "Monthly membership fees, one-time charges, proof-upload workflow and one-tap approval - a full financial history without a spreadsheet." },
+      { title: "Parent communication", body: "Push notifications and in-app updates on schedule changes, results and announcements, so parents aren't left following a group chat." }
+    ],
+    faq: [
+      { q: "How does All Mighty Sync work for basketball clubs?", a: "Coaches log attendance and track player progress using categories your program defines - not a generic template. Administrators manage teams, membership payments and club-wide announcements from one dashboard. Parents and players see schedules, attendance and progress in the app." },
+      { q: "Can I track the specific stats that matter to my program?", a: "Yes. Evaluation categories are fully customizable per organization, so you define what gets tracked - shooting percentage, defensive stats, conditioning benchmarks or anything else - rather than being limited to a fixed template." },
+      { q: "Can I manage multiple teams and age groups separately?", a: "Yes. Players are organized into teams and groups, each with their own schedule and attendance records, while administrators keep a club-wide view across all of them." },
+      { q: "How does membership payment tracking work?", a: "Administrators set up monthly membership fees or one-time charges, review payment proof uploads, and approve or reject payments with one tap - with a full financial history and dashboard." },
+      { q: "Is All Mighty Sync a mobile app?", a: "Yes. Coaches, parents and players use All Mighty Sync as a mobile app on iOS and Android, while administrators can also manage the club from a web dashboard." }
+    ]
+  },
+  {
+    slug: "volleyball-club-management-software",
+    ctaButton: "Book a Volleyball Club Demo",
+    title: "Volleyball Club Management Software | All Mighty Sync",
+    metaDescription: "Club management software for volleyball clubs and academies - attendance, scheduling, membership payments, parent communication and custom progress tracking in one platform.",
+    h1: "Volleyball Club Management Software",
+    introLabel: "FOR VOLLEYBALL CLUBS & ACADEMIES",
+    introBody: "All Mighty Sync is club management software built for volleyball clubs and academies. It replaces the group chats, spreadsheets and paper attendance sheets most clubs run on with one platform covering training and match attendance, scheduling across teams and age groups, membership payments and parent communication. Every organization on All Mighty Sync defines its own evaluation categories, so coaches can track exactly what matters to their program - serving accuracy, blocking, rotations or anything else - instead of being forced into a generic template. It's available as a mobile app for coaches, parents and players, alongside a web dashboard for administrators.",
+    features: [
+      { title: "Training & match attendance", body: "QR check-in for practices and matches, attendance history per player and per team, and reports on who's missing sessions." },
+      { title: "Custom progress tracking", body: "Define your own evaluation categories - serving, blocking, rotations or anything else your program tracks - and log results per player over the season." },
+      { title: "Team & roster management", body: "Organize players into teams and age groups, assign coaches, and manage practice and match schedules from one place." },
+      { title: "Membership payments", body: "Monthly membership fees, one-time charges, proof-upload workflow and one-tap approval - a full financial history without a spreadsheet." },
+      { title: "Parent communication", body: "Push notifications and in-app updates on schedule changes, results and announcements, so parents aren't left following a group chat." }
+    ],
+    faq: [
+      { q: "How does All Mighty Sync work for volleyball clubs?", a: "Coaches log attendance and track player progress using categories your program defines - not a generic template. Administrators manage teams, membership payments and club-wide announcements from one dashboard. Parents and players see schedules, attendance and progress in the app." },
+      { q: "Can I track the specific stats that matter to my program?", a: "Yes. Evaluation categories are fully customizable per organization, so you define what gets tracked - serving accuracy, blocking, rotations or anything else - rather than being limited to a fixed template." },
+      { q: "Can I manage multiple teams and age groups separately?", a: "Yes. Players are organized into teams and groups, each with their own schedule and attendance records, while administrators keep a club-wide view across all of them." },
+      { q: "How does membership payment tracking work?", a: "Administrators set up monthly membership fees or one-time charges, review payment proof uploads, and approve or reject payments with one tap - with a full financial history and dashboard." },
+      { q: "Is All Mighty Sync a mobile app?", a: "Yes. Coaches, parents and players use All Mighty Sync as a mobile app on iOS and Android, while administrators can also manage the club from a web dashboard." }
+    ]
+  },
+  {
+    slug: "tennis-academy-management-software",
+    ctaButton: "Book a Tennis Academy Demo",
+    title: "Tennis Academy Management Software | All Mighty Sync",
+    metaDescription: "Club management software for tennis academies - attendance, lesson and clinic scheduling, membership payments, parent communication and custom progress tracking in one platform.",
+    h1: "Tennis Academy Management Software",
+    introLabel: "FOR TENNIS ACADEMIES",
+    introBody: "All Mighty Sync is club management software built for tennis academies running both individual lessons and group clinics. It replaces the group chats, spreadsheets and paper attendance sheets most academies run on with one platform covering lesson and clinic attendance, scheduling, membership payments and parent communication. Every organization on All Mighty Sync defines its own evaluation categories, so coaches can track exactly what matters to their program - technique, match results, fitness benchmarks or anything else - instead of being forced into a generic template. It's available as a mobile app for coaches, parents and players, alongside a web dashboard for administrators.",
+    features: [
+      { title: "Lesson & clinic attendance", body: "QR check-in for individual lessons and group clinics, attendance history per student, and reports on who's missing sessions." },
+      { title: "Custom progress tracking", body: "Define your own evaluation categories - technique, match results, fitness or anything else your program tracks - and log results per student over the season." },
+      { title: "Lesson & clinic scheduling", body: "Organize individual lessons and group clinics, assign coaches, and manage schedules from one place." },
+      { title: "Membership payments", body: "Monthly membership fees, one-time charges, proof-upload workflow and one-tap approval - a full financial history without a spreadsheet." },
+      { title: "Parent communication", body: "Push notifications and in-app updates on schedule changes, results and announcements, so parents aren't left following a group chat." }
+    ],
+    faq: [
+      { q: "How does All Mighty Sync work for tennis academies?", a: "Coaches log attendance and track player progress using categories your program defines - not a generic template. Administrators manage lessons, clinics, membership payments and academy-wide announcements from one dashboard. Parents and players see schedules, attendance and progress in the app." },
+      { q: "Does it handle both individual lessons and group clinics?", a: "Yes. You can schedule and track attendance for individual lessons and group clinics separately, all from the same platform." },
+      { q: "Can I track the specific stats that matter to my program?", a: "Yes. Evaluation categories are fully customizable per organization, so you define what gets tracked - technique, match results, fitness benchmarks or anything else." },
+      { q: "How does membership payment tracking work?", a: "Administrators set up monthly membership fees or one-time charges, review payment proof uploads, and approve or reject payments with one tap - with a full financial history and dashboard." },
+      { q: "Is All Mighty Sync a mobile app?", a: "Yes. Coaches, parents and players use All Mighty Sync as a mobile app on iOS and Android, while administrators can also manage the academy from a web dashboard." }
+    ]
+  },
+  {
+    slug: "swimming-club-management-software",
+    ctaButton: "Book a Swimming Club Demo",
+    title: "Swimming Club Management Software | All Mighty Sync",
+    metaDescription: "Club management software for swimming clubs and academies - attendance, scheduling, membership payments, parent communication and custom progress tracking in one platform.",
+    h1: "Swimming Club Management Software",
+    introLabel: "FOR SWIMMING CLUBS & ACADEMIES",
+    introBody: "All Mighty Sync is club management software built for swimming clubs and academies. It replaces the group chats, spreadsheets and paper attendance sheets most clubs run on with one platform covering training and meet attendance, scheduling across squads and age groups, membership payments and parent communication. Every organization on All Mighty Sync defines its own evaluation categories, so coaches can track exactly what matters to their program - lap times, stroke technique, meet results or anything else - instead of being forced into a generic template. It's available as a mobile app for coaches, parents and swimmers, alongside a web dashboard for administrators.",
+    features: [
+      { title: "Training & meet attendance", body: "QR check-in for training sessions and meets, attendance history per swimmer and per squad, and reports on who's missing sessions." },
+      { title: "Custom progress tracking", body: "Define your own evaluation categories - lap times, stroke technique, meet results or anything else your program tracks - and log results per swimmer over the season." },
+      { title: "Squad & group management", body: "Organize swimmers into squads and age groups, assign coaches, and manage training and meet schedules from one place." },
+      { title: "Membership payments", body: "Monthly membership fees, one-time charges, proof-upload workflow and one-tap approval - a full financial history without a spreadsheet." },
+      { title: "Parent communication", body: "Push notifications and in-app updates on schedule changes, results and announcements, so parents aren't left following a group chat." }
+    ],
+    faq: [
+      { q: "How does All Mighty Sync work for swimming clubs?", a: "Coaches log attendance and track swimmer progress using categories your program defines - not a generic template. Administrators manage squads, membership payments and club-wide announcements from one dashboard. Parents and swimmers see schedules, attendance and progress in the app." },
+      { q: "Can I track lap times and meet results?", a: "Yes. Evaluation categories are fully customizable per organization, so you define what gets tracked - lap times, stroke technique, meet results or anything else." },
+      { q: "Can I manage multiple squads and age groups separately?", a: "Yes. Swimmers are organized into squads and groups, each with their own schedule and attendance records, while administrators keep a club-wide view across all of them." },
+      { q: "How does membership payment tracking work?", a: "Administrators set up monthly membership fees or one-time charges, review payment proof uploads, and approve or reject payments with one tap - with a full financial history and dashboard." },
+      { q: "Is All Mighty Sync a mobile app?", a: "Yes. Coaches, parents and swimmers use All Mighty Sync as a mobile app on iOS and Android, while administrators can also manage the club from a web dashboard." }
+    ]
+  },
+  {
+    slug: "gymnastics-club-management-software",
+    ctaButton: "Book a Gymnastics Club Demo",
+    title: "Gymnastics Club Management Software | All Mighty Sync",
+    metaDescription: "Club management software for gymnastics clubs and academies - attendance, scheduling, membership payments, parent communication and custom progress tracking in one platform.",
+    h1: "Gymnastics Club Management Software",
+    introLabel: "FOR GYMNASTICS CLUBS & ACADEMIES",
+    introBody: "All Mighty Sync is club management software built for gymnastics clubs and academies. It replaces the group chats, spreadsheets and paper attendance sheets most clubs run on with one platform covering training and meet attendance, scheduling across levels and age groups, membership payments and parent communication. Every organization on All Mighty Sync defines its own evaluation categories, so coaches can track exactly what matters to their program - skill progressions, routine scores, meet results or anything else - instead of being forced into a generic template. It's available as a mobile app for coaches, parents and gymnasts, alongside a web dashboard for administrators.",
+    features: [
+      { title: "Training & meet attendance", body: "QR check-in for training sessions and meets, attendance history per gymnast and per level, and reports on who's missing sessions." },
+      { title: "Custom progress tracking", body: "Define your own evaluation categories - skill progressions, routine scores, meet results or anything else your program tracks - and log results per gymnast over the season." },
+      { title: "Level & group management", body: "Organize gymnasts into levels and age groups, assign coaches, and manage training and meet schedules from one place." },
+      { title: "Membership payments", body: "Monthly membership fees, one-time charges, proof-upload workflow and one-tap approval - a full financial history without a spreadsheet." },
+      { title: "Parent communication", body: "Push notifications and in-app updates on schedule changes, results and announcements, so parents aren't left following a group chat." }
+    ],
+    faq: [
+      { q: "How does All Mighty Sync work for gymnastics clubs?", a: "Coaches log attendance and track gymnast progress using categories your program defines - not a generic template. Administrators manage levels, membership payments and club-wide announcements from one dashboard. Parents and gymnasts see schedules, attendance and progress in the app." },
+      { q: "Can I track skill progressions and routine scores?", a: "Yes. Evaluation categories are fully customizable per organization, so you define what gets tracked - skill progressions, routine scores, meet results or anything else." },
+      { q: "Can I manage multiple levels and age groups separately?", a: "Yes. Gymnasts are organized into levels and groups, each with their own schedule and attendance records, while administrators keep a club-wide view across all of them." },
+      { q: "How does membership payment tracking work?", a: "Administrators set up monthly membership fees or one-time charges, review payment proof uploads, and approve or reject payments with one tap - with a full financial history and dashboard." },
+      { q: "Is All Mighty Sync a mobile app?", a: "Yes. Coaches, parents and gymnasts use All Mighty Sync as a mobile app on iOS and Android, while administrators can also manage the club from a web dashboard." }
+    ]
+  },
+  {
+    slug: "tutoring-center-management-software",
+    ctaButton: "Book a Tutoring Center Demo",
+    title: "Tutoring Center Management Software | All Mighty Sync",
+    metaDescription: "Club management software for tutoring centers - attendance, lesson scheduling, membership payments, parent communication and custom progress tracking in one platform.",
+    h1: "Tutoring Center Management Software",
+    introLabel: "FOR TUTORING CENTERS",
+    introBody: "All Mighty Sync is club management software built for tutoring centers running individual and small-group sessions across subjects. It replaces the group chats, spreadsheets and paper attendance sheets most centers run on with one platform covering session attendance, scheduling, membership payments and parent communication. Every organization on All Mighty Sync defines its own evaluation categories, so tutors can track exactly what matters to their program - topic mastery, test scores, homework completion or anything else - instead of being forced into a generic template. It's available as a mobile app for tutors, parents and students, alongside a web dashboard for administrators.",
+    features: [
+      { title: "Session attendance", body: "QR check-in for individual and group sessions, attendance history per student, and reports on who's missing sessions." },
+      { title: "Custom progress tracking", body: "Define your own evaluation categories - topic mastery, test scores, homework completion or anything else your center tracks - and log results per student over time." },
+      { title: "Subject & session scheduling", body: "Organize sessions by subject and student group, assign tutors, and manage schedules from one place." },
+      { title: "Membership payments", body: "Monthly membership fees, one-time charges, proof-upload workflow and one-tap approval - a full financial history without a spreadsheet." },
+      { title: "Parent communication", body: "Push notifications and in-app updates on schedule changes, progress and announcements, so parents aren't left following a group chat." }
+    ],
+    faq: [
+      { q: "How does All Mighty Sync work for tutoring centers?", a: "Tutors log session attendance and track student progress using categories your center defines - not a generic template. Administrators manage sessions, membership payments and center-wide announcements from one dashboard. Parents and students see schedules, attendance and progress in the app." },
+      { q: "Can I track test scores and topic mastery?", a: "Yes. Evaluation categories are fully customizable per organization, so you define what gets tracked - topic mastery, test scores, homework completion or anything else." },
+      { q: "Does it work for both individual and group sessions?", a: "Yes. You can schedule and track attendance for individual and small-group sessions separately, all from the same platform." },
+      { q: "How does membership payment tracking work?", a: "Administrators set up monthly membership fees or one-time charges, review payment proof uploads, and approve or reject payments with one tap - with a full financial history and dashboard." },
+      { q: "Is All Mighty Sync a mobile app?", a: "Yes. Tutors, parents and students use All Mighty Sync as a mobile app on iOS and Android, while administrators can also manage the center from a web dashboard." }
+    ]
+  },
+  {
+    slug: "after-school-activity-management-software",
+    ctaButton: "Book an After-School Program Demo",
+    title: "After-School Activity Management Software | All Mighty Sync",
+    metaDescription: "Club management software for after-school activity organizations running multiple programs - attendance, scheduling, membership payments and parent communication in one platform.",
+    h1: "After-School Activity Management Software",
+    introLabel: "FOR AFTER-SCHOOL ACTIVITY ORGANIZATIONS",
+    introBody: "All Mighty Sync is club management software built for organizations running multiple after-school activities - sports, arts and academic programs - under one roof. It replaces the group chats, spreadsheets and paper attendance sheets most organizations run on with one platform covering attendance across every program, scheduling, membership payments and parent communication. Because the platform adapts to how your organization is actually structured rather than forcing a single-activity template, administrators get one dashboard across every program instead of juggling separate systems for each one. It's available as a mobile app for staff, parents and students, alongside a web dashboard for administrators.",
+    features: [
+      { title: "Attendance across every program", body: "QR check-in for any activity - sports, arts or academic - with attendance history per student and per program, and reports on who's missing sessions." },
+      { title: "One dashboard, every program", body: "Manage sports, arts and academic programs from a single admin view instead of separate systems for each one." },
+      { title: "Program & group scheduling", body: "Organize students into program groups, assign staff, and manage schedules across every activity from one place." },
+      { title: "Membership payments", body: "Monthly membership fees, one-time charges, proof-upload workflow and one-tap approval - a full financial history without a spreadsheet." },
+      { title: "Parent communication", body: "Push notifications and in-app updates on schedule changes and announcements across every program a child is enrolled in, so parents aren't left following a group chat." }
+    ],
+    faq: [
+      { q: "How does All Mighty Sync work for after-school organizations?", a: "Staff log attendance for each program a student attends. Administrators manage every program - sports, arts, academic - from one dashboard instead of separate systems. Parents see schedules, attendance and announcements for all their children's activities in one app." },
+      { q: "Can it handle multiple different activity types at once?", a: "Yes. The platform adapts to how your organization is structured, so sports, arts and academic programs can all run through the same system with their own schedules and groups." },
+      { q: "Can parents see all their child's activities in one place?", a: "Yes. If a child is enrolled in more than one program, parents see attendance, schedules and updates for all of them in a single app." },
+      { q: "How does membership payment tracking work?", a: "Administrators set up monthly membership fees or one-time charges, review payment proof uploads, and approve or reject payments with one tap - with a full financial history and dashboard." },
+      { q: "Is All Mighty Sync a mobile app?", a: "Yes. Staff, parents and students use All Mighty Sync as a mobile app on iOS and Android, while administrators can also manage the organization from a web dashboard." }
+    ]
+  },
+  {
+    slug: "childrens-activity-center-management-software",
+    ctaButton: "Book a Children's Activity Center Demo",
+    title: "Children's Activity Center Management Software | All Mighty Sync",
+    metaDescription: "Club management software for children's activity centers running multiple programs - attendance, scheduling, membership payments and parent communication in one platform.",
+    h1: "Children's Activity Center Management Software",
+    introLabel: "FOR CHILDREN'S ACTIVITY CENTERS",
+    introBody: "All Mighty Sync is club management software built for activity centers running multiple children's programs under one roof. It replaces the group chats, spreadsheets and paper attendance sheets most centers run on with one platform covering check-in and attendance across every program, scheduling, membership payments and parent communication. QR check-in gives staff and parents a clear, timestamped record of when a child arrived and left each session, and because the platform adapts to how your center is actually structured, administrators get one dashboard across every program instead of juggling separate systems for each one. It's available as a mobile app for staff, parents and students, alongside a web dashboard for administrators.",
+    features: [
+      { title: "QR check-in across every program", body: "A clear, timestamped record of attendance for any program a child attends, with attendance history per child and reports on who's missing sessions." },
+      { title: "One dashboard, every program", body: "Manage every program your center runs from a single admin view instead of separate systems for each one." },
+      { title: "Program & group scheduling", body: "Organize children into program groups, assign staff, and manage schedules across every program from one place." },
+      { title: "Membership payments", body: "Monthly membership fees, one-time charges, proof-upload workflow and one-tap approval - a full financial history without a spreadsheet." },
+      { title: "Parent communication", body: "Push notifications and in-app updates on schedule changes and announcements across every program a child is enrolled in, so parents aren't left following a group chat." }
+    ],
+    faq: [
+      { q: "How does All Mighty Sync work for children's activity centers?", a: "Staff check children in and out with QR codes for each program. Administrators manage every program from one dashboard instead of separate systems. Parents see schedules, attendance and announcements for all their children's programs in one app." },
+      { q: "Can parents see when their child checked in and out?", a: "Yes. QR check-in creates a timestamped attendance record for each session, visible to parents and administrators." },
+      { q: "Can it handle multiple different programs at once?", a: "Yes. The platform adapts to how your center is structured, so every program can run through the same system with its own schedule and group." },
+      { q: "How does membership payment tracking work?", a: "Administrators set up monthly membership fees or one-time charges, review payment proof uploads, and approve or reject payments with one tap - with a full financial history and dashboard." },
+      { q: "Is All Mighty Sync a mobile app?", a: "Yes. Staff, parents and students use All Mighty Sync as a mobile app on iOS and Android, while administrators can also manage the center from a web dashboard." }
+    ]
+  },
+  {
+    slug: "multi-sport-academy-management-software",
+    ctaButton: "Book a Multi-Sport Academy Demo",
+    title: "Multi-Sport Academy Management Software | All Mighty Sync",
+    metaDescription: "Club management software for multi-sport academies - manage every discipline, team and age group from one dashboard, with attendance, payments and parent communication built in.",
+    h1: "Multi-Sport Academy Management Software",
+    introLabel: "FOR MULTI-SPORT ACADEMIES",
+    introBody: "All Mighty Sync is club management software built for academies running multiple sports under one organization. Every organization on All Mighty Sync defines its own disciplines, groups and evaluation categories - your platform adapts to how your academy is actually structured, instead of forcing every sport into the same generic template. Administrators get one dashboard across every discipline, team and age group, covering attendance, scheduling, membership payments and parent communication, rather than juggling a separate system per sport. It's available as a mobile app for coaches, parents and athletes, alongside a web dashboard for administrators.",
+    features: [
+      { title: "One dashboard, every discipline", body: "Manage every sport your academy runs - each with its own groups, schedules and evaluation categories - from a single admin view." },
+      { title: "Attendance across every sport", body: "QR check-in for training and events in any discipline, with attendance history per athlete, per team and per sport." },
+      { title: "Custom progress tracking per discipline", body: "Define separate evaluation categories for each sport, so a football team and a swim squad can each be tracked in the terms that make sense for them." },
+      { title: "Membership payments", body: "Monthly membership fees, one-time charges, proof-upload workflow and one-tap approval - a full financial history without a spreadsheet, across every program." },
+      { title: "Parent communication", body: "Push notifications and in-app updates across every sport a child is enrolled in, so parents aren't left following a separate group chat per team." }
+    ],
+    faq: [
+      { q: "How does All Mighty Sync work for multi-sport academies?", a: "Coaches log attendance and track progress per discipline, using categories defined for that sport. Administrators manage every team, every sport and membership payments from one dashboard. Parents see schedules, attendance and progress across all their children's sports in one app." },
+      { q: "Can each sport have its own tracking categories?", a: "Yes. Evaluation categories are defined per discipline, so a football program and a gymnastics program can each track what's actually relevant to them, in the same platform." },
+      { q: "Can parents with children in different sports see everything in one place?", a: "Yes. If a family has children across multiple sports at your academy, parents see attendance, schedules and updates for all of them in a single app." },
+      { q: "How does membership payment tracking work?", a: "Administrators set up monthly membership fees or one-time charges, review payment proof uploads, and approve or reject payments with one tap - with a full financial history and dashboard, across every program." },
+      { q: "Is All Mighty Sync a mobile app?", a: "Yes. Coaches, parents and athletes use All Mighty Sync as a mobile app on iOS and Android, while administrators can also manage the academy from a web dashboard." }
     ]
   }
 ];
