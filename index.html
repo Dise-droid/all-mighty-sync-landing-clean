@@ -1,23 +1,103 @@
 <!DOCTYPE html>
-<html lang="bs">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="Content-Security-Policy" content="
     default-src 'self';
-    script-src 'self';
+    script-src 'self' https://www.googletagmanager.com;
     style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
     font-src 'self' https://fonts.gstatic.com;
     img-src 'self' data:;
-    connect-src 'self' https://api.web3forms.com;
+    connect-src 'self' https://api.web3forms.com https://www.google-analytics.com https://*.google-analytics.com https://*.analytics.google.com;
   ">
-  <title>All Mighty Sync - Sport, Arts & Education Platform</title>
-  <meta name="description" content="All Mighty Sync connects administrators, teachers, parents and students in extracurricular organizations. Attendance, portfolios, payments and scheduling - one platform." />
+
+  <!-- Primary SEO -->
+  <title>Club Management Software for Sports, Arts and Education | All Mighty Sync</title>
+  <meta name="description" content="Manage attendance, scheduling, memberships, payments, parent communication and student progress in one platform built for sports clubs, academies and activity schools." />
+  <link rel="canonical" href="https://allmightysync.com/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="All Mighty Sync" />
+  <meta property="og:url" content="https://allmightysync.com/" />
+  <meta property="og:title" content="Club Management Software for Sports, Arts and Education" />
+  <meta property="og:description" content="Manage attendance, scheduling, memberships, payments, parent communication and student progress in one platform built for sports clubs, academies and activity schools." />
+  <meta property="og:image" content="https://allmightysync.com/images/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="All Mighty Sync - club management software showing QR attendance, organisation overview, group management and reporting screens" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Club Management Software for Sports, Arts and Education" />
+  <meta name="twitter:description" content="Manage attendance, scheduling, memberships, payments, parent communication and student progress in one platform built for sports clubs, academies and activity schools." />
+  <meta name="twitter:image" content="https://allmightysync.com/images/og-image.png" />
+
+  <meta name="theme-color" content="#E88E24" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
   <link rel="icon" type="image/svg+xml" href="images/logo.svg" />
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="images/icon-192.png" />
+  <link rel="icon" type="image/png" sizes="512x512" href="images/icon-512.png" />
+  <link rel="manifest" href="site.webmanifest" />
+
   <link rel="stylesheet" href="css/style.css?v=25" />
+
+  <!--
+    GA4 (currently inert): once a real Measurement ID exists, uncomment both
+    tags below and replace G-XXXXXXXXXX. No other code changes are needed -
+    js/script.js already calls trackEvent(), which safely no-ops until
+    window.gtag exists.
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX', { anonymize_ip: true });
+  </script>
+  -->
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://allmightysync.com/#organization",
+        "name": "All Mighty Sync",
+        "url": "https://allmightysync.com/",
+        "logo": "https://allmightysync.com/images/icon-512.png",
+        "email": "info@allmightysync.com",
+        "description": "All Mighty Sync builds club management software for sports clubs, academies, studios and schools - covering attendance, scheduling, payments, communication and student progress tracking."
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://allmightysync.com/#website",
+        "name": "All Mighty Sync",
+        "url": "https://allmightysync.com/",
+        "inLanguage": "en",
+        "publisher": { "@id": "https://allmightysync.com/#organization" }
+      },
+      {
+        "@type": "SoftwareApplication",
+        "name": "All Mighty Sync",
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "iOS, Android, Web",
+        "description": "Club management software for sports clubs, academies, studios and schools. Manage attendance, QR check-in, scheduling, groups, payments, communication and student progress in one platform.",
+        "url": "https://allmightysync.com/"
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 
@@ -25,14 +105,14 @@
 <nav class="navbar">
   <div class="container">
     <div class="brand">
-      <img src="images/logo.svg" alt="All Mighty Sync" />
+      <img src="images/logo.svg" alt="All Mighty Sync" width="375" height="375" />
       <span class="brand-text">All Mighty Sync</span>
     </div>
     <div class="nav-links">
-      <a href="#features-section" data-i18n="nav.features">FEATURES</a>
-      <a href="#roles-section" data-i18n="nav.roles">ROLES</a>
+      <a href="#features-section" data-i18n="nav.features" data-track="feature_navigation_click" data-track-source="nav">FEATURES</a>
+      <a href="#roles-section" data-i18n="nav.roles" data-track="audience_navigation_click" data-track-source="nav">ROLES</a>
       <a href="#get-started-section" data-i18n="nav.getStarted">GET STARTED</a>
-      <a href="#contact-section" data-i18n="nav.contact">CONTACT</a>
+      <a href="#contact-section" data-i18n="nav.contact" data-track="contact_click" data-track-source="nav">CONTACT</a>
       <div class="lang-switcher" role="group" aria-label="Language">
         <button type="button" class="lang-btn active" data-lang="bs">BH</button>
         <button type="button" class="lang-btn" data-lang="en">EN</button>
@@ -46,12 +126,12 @@
 <section class="hero" id="home">
   <div class="container">
     <div class="hero-visual">
-      <img src="images/hero-phones.png" alt="All Mighty Sync app" />
+      <img src="images/hero-phones.png" alt="All Mighty Sync club management app showing QR attendance, organisation overview and reporting screens" width="2243" height="1095" fetchpriority="high" />
       <div class="promo-badge" data-i18n="hero.promo">Sign up by July 31, 2026 and unlock all features for 3 months - completely free.</div>
     </div>
     <div class="hero-content">
       <h1 data-i18n-html="hero.title">Put the group chat on mute! <span class="accent">All your information is now in one place.</span></h1>
-      <p class="hero-sub" data-i18n="hero.subtitle">Manage your entire organization from one platform. Attendance, student development, scheduling, communication, payments and reporting - connected in one ecosystem built for extracurricular education.</p>
+      <p class="hero-sub" data-i18n="hero.subtitle">All Mighty Sync is club management software that brings attendance, student development, scheduling, communication, payments and reporting into one platform - built for sports clubs, academies and activity schools.</p>
       <div class="trust-row">
         <span class="trust-item" data-i18n="hero.trust1">✓ Attendance</span>
         <span class="trust-item" data-i18n="hero.trust2">✓ Portfolios</span>
@@ -63,34 +143,34 @@
       <div class="store-buttons">
         <div class="store-group">
           <div class="launch-countdown" data-launch="2026-07-20T00:00:00+02:00">
-            <span class="countdown-label" data-i18n="countdown.label">Uživo za</span>
+            <span class="countdown-label" data-i18n="countdown.label">Live in</span>
             <div class="countdown-units">
-              <div class="countdown-unit"><span class="countdown-num" data-cd="days">00</span><span class="countdown-unit-label" data-i18n="countdown.days">dana</span></div>
+              <div class="countdown-unit"><span class="countdown-num" data-cd="days">00</span><span class="countdown-unit-label" data-i18n="countdown.days">days</span></div>
               <span class="countdown-sep">:</span>
-              <div class="countdown-unit"><span class="countdown-num" data-cd="hours">00</span><span class="countdown-unit-label" data-i18n="countdown.hours">sati</span></div>
+              <div class="countdown-unit"><span class="countdown-num" data-cd="hours">00</span><span class="countdown-unit-label" data-i18n="countdown.hours">hrs</span></div>
               <span class="countdown-sep">:</span>
               <div class="countdown-unit"><span class="countdown-num" data-cd="minutes">00</span><span class="countdown-unit-label" data-i18n="countdown.minutes">min</span></div>
               <span class="countdown-sep">:</span>
-              <div class="countdown-unit"><span class="countdown-num" data-cd="seconds">00</span><span class="countdown-unit-label" data-i18n="countdown.seconds">sek</span></div>
+              <div class="countdown-unit"><span class="countdown-num" data-cd="seconds">00</span><span class="countdown-unit-label" data-i18n="countdown.seconds">sec</span></div>
             </div>
-            <span class="countdown-live-label" data-i18n="countdown.liveLabel">Uživo smo!</span>
+            <span class="countdown-live-label" data-i18n="countdown.liveLabel">We're live! 🎉</span>
           </div>
-          <span class="store-soon" data-i18n="hero.comingSoon">Uskoro na:</span>
+          <span class="store-soon" data-i18n="hero.comingSoon">Soon on:</span>
           <div class="store-btns-row">
             <!-- APP STORE LINK - re-enable when ready: href="https://apps.apple.com/ba/app/all-mighty-sync/id6776313753" -->
             <span class="store-btn is-disabled" aria-label="App Store" aria-disabled="true">
               <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24" aria-hidden="true"><path d="M17.564 12.713c-.024-2.43 1.984-3.598 2.075-3.654-1.131-1.654-2.892-1.881-3.518-1.907-1.498-.151-2.924.882-3.687.882-.762 0-1.937-.86-3.187-.836-1.641.024-3.155.953-4.001 2.42-1.704 2.953-.436 7.32 1.225 9.715.81 1.171 1.776 2.488 3.044 2.441 1.222-.05 1.683-.79 3.16-.79 1.476 0 1.893.79 3.187.764 1.316-.024 2.149-1.196 2.953-2.371.93-1.36 1.314-2.677 1.337-2.745-.029-.012-2.566-.985-2.588-3.919zM15.18 5.475c.677-.82 1.131-1.96.998-3.092-.965.039-2.137.643-2.836 1.461-.626.726-1.171 1.886-1.024 2.998 1.078.082 2.18-.547 2.862-1.367z"/></svg>
               <span><span class="small" data-i18n="store.apple.small">Download on</span><span class="big" data-i18n="store.apple.big">App Store</span></span>
-              <a href="#contact-section" class="store-tooltip" data-i18n="store.tooltip">Or request a demo</a>
+              <a href="#contact-section" class="store-tooltip" data-i18n="store.tooltip" data-track="request_demo_click" data-track-source="store_tooltip">Or request a demo</a>
             </span>
             <span class="store-btn is-disabled" aria-label="Google Play" aria-disabled="true">
               <svg viewBox="0 0 512 512" fill="currentColor" width="24" height="24" aria-hidden="true"><path d="M325.3 234.3 104.6 13l280.8 161.2-60.1 60.1zM47 0c-13 6.8-21 19.4-21 35.7v440.6c0 16.3 8 28.9 21 35.7l256.4-256L47 0zm425.2 225.6-58.9-34.1-65.7 64.5 65.7 64.5 60.1-34.1c18-14.3 18-46.5-1.2-60.8zM104.6 499 385.4 337.8l-60.1-60.1L104.6 499z"/></svg>
               <span><span class="small" data-i18n="store.google.small">Download on</span><span class="big" data-i18n="store.google.big">Google Play</span></span>
-              <a href="#contact-section" class="store-tooltip" data-i18n="store.tooltip">Or request a demo</a>
+              <a href="#contact-section" class="store-tooltip" data-i18n="store.tooltip" data-track="request_demo_click" data-track-source="store_tooltip">Or request a demo</a>
             </span>
           </div>
         </div>
-        <a href="#contact-section" class="btn-demo" data-i18n="hero.requestDemo">Request Demo</a>
+        <a href="#contact-section" class="btn-demo" data-i18n="hero.requestDemo" data-track="request_demo_click" data-track-source="hero">Request Demo</a>
       </div>
     </div>
   </div>
@@ -115,7 +195,7 @@
         <div class="converge-label" data-i18n="problem.converge">all land on one desk</div>
         <div class="converge-arrow">↓</div>
         <div class="converge-solution">
-          <img src="images/logo.svg" alt="All Mighty Sync" />
+          <img src="images/logo.svg" alt="All Mighty Sync" width="375" height="375" loading="lazy" />
           <span>All Mighty Sync</span>
         </div>
       </div>
@@ -157,7 +237,7 @@
 
     <div class="feature-block feature-block--img-right">
       <div class="feature-block-visual">
-        <img class="finance-screenshot" src="images/finance-screenshot.png" alt="All Mighty Sync memberships and finance screens showing collected payments, unpaid members and revenue trend" />
+        <img class="finance-screenshot" src="images/finance-screenshot.png" alt="All Mighty Sync memberships and finance screens showing collected payments, unpaid members and revenue trend" width="2188" height="1896" loading="lazy" />
       </div>
       <div class="feature-block-content">
         <div class="feature-tag feature-tag--green" data-i18n="features.block3.tag">Finance</div>
@@ -187,7 +267,7 @@
         </ul>
       </div>
       <div class="feature-block-visual">
-        <img class="notifications-screenshot" src="images/notifications-hero.png" alt="All Mighty Sync notifications, messaging and lock-screen alerts" />
+        <img class="notifications-screenshot" src="images/notifications-hero.png" alt="All Mighty Sync notifications, messaging and lock-screen alerts" width="2188" height="1896" loading="lazy" />
       </div>
     </div>
   </div>
@@ -313,7 +393,7 @@
         </ul>
       </div>
       <div class="portfolio-cards">
-        <img class="portfolio-screenshot" src="images/portfolio-screenshot.png" alt="All Mighty Sync student portfolio screens showing skill profile, coach insights and benchmark scale" />
+        <img class="portfolio-screenshot" src="images/portfolio-screenshot.png" alt="All Mighty Sync student portfolio screens showing skill profile, coach insights and benchmark scale" width="2188" height="1896" loading="lazy" />
       </div>
     </div>
   </div>
@@ -360,7 +440,7 @@
       <div class="step-card"><div class="step-num">03</div><h4 data-i18n="onboarding.s3.title">Invite your people</h4><p data-i18n="onboarding.s3.body">Invite teachers, students and parents all at once - with a single click. Everyone receives an email invitation and joins an organization that's already structured and ready. They open the app and everything is there.</p></div>
       <div class="step-card"><div class="step-num">04</div><h4 data-i18n="onboarding.s4.title">Operate independently</h4><p data-i18n="onboarding.s4.body">Day-to-day, your organization runs through the platform. Our team remains available if you need us, but the admin controls everything.</p></div>
     </div>
-    <div class="onboarding-cta"><a href="#contact-section" class="btn-primary" data-i18n="onboarding.cta">Request a Demo</a></div>
+    <div class="onboarding-cta"><a href="#contact-section" class="btn-primary" data-i18n="onboarding.cta" data-track="request_demo_click" data-track-source="onboarding">Request a Demo</a></div>
   </div>
 </section>
 
@@ -417,11 +497,11 @@
       </div>
       <div class="team-grid">
         <div class="team-card">
-          <img src="images/anja.png" alt="Anja Ćurković" />
+          <img src="images/anja.png" alt="Anja Ćurković" width="796" height="734" loading="lazy" />
           <div class="overlay"><div class="name">ANJA ĆURKOVIĆ</div><div class="role" data-i18n="team.anja.role">CEO &amp; CO-FOUNDER</div></div>
         </div>
         <div class="team-card">
-          <img src="images/edis.png" alt="Edis Bilić" />
+          <img src="images/edis.png" alt="Edis Bilić" width="814" height="1176" loading="lazy" />
           <div class="overlay"><div class="name">EDIS BILIĆ</div><div class="role" data-i18n="team.edis.role">CPO &amp; CO-FOUNDER</div></div>
         </div>
       </div>
@@ -461,24 +541,24 @@
 <section class="contact fade-section" id="contact-section">
   <div class="container">
     <div>
-      <h2 data-i18n="contact.title">Imate li pitanja?</h2>
-      <h3 data-i18n="contact.subtitle">Kontaktirajte nas!</h3>
-      <p class="lead" data-i18n="contact.lead">Drago nam je čuti od vas. Pošaljite nam poruku i odgovorit ćemo u najkraćem mogućem roku.</p>
+      <h2 data-i18n="contact.title">Do you have any questions?</h2>
+      <h3 data-i18n="contact.subtitle">Contact us!</h3>
+      <p class="lead" data-i18n="contact.lead">We are happy to hear from you. Send us a message and we will reply as soon as possible.</p>
       <div class="contact-info">
-        <div><strong data-i18n="contact.emailLabel">Email:</strong> <span>info@allmightysync.com</span></div>
-        <div><strong data-i18n="contact.phoneLabel">Telefon:</strong> <span>+387 61 71 27 76</span></div>
-        <div><strong data-i18n="contact.locationLabel">Lokacija:</strong> <span data-i18n="contact.locationValue">Sarajevo, Bosna i Hercegovina</span></div>
+        <div><strong data-i18n="contact.emailLabel">Email:</strong> <span><a href="mailto:info@allmightysync.com" data-track="email_click">info@allmightysync.com</a></span></div>
+        <div><strong data-i18n="contact.phoneLabel">Phone:</strong> <span><a href="tel:+38761712776" data-track="phone_click">+387 61 71 27 76</a></span></div>
+        <div><strong data-i18n="contact.locationLabel">Location:</strong> <span data-i18n="contact.locationValue">Sarajevo, Bosnia and Herzegovina</span></div>
       </div>
     </div>
     <form id="contactForm" class="contact-form" novalidate>
       <div class="form-row">
-        <input type="text" name="ime" placeholder="Ime" data-i18n-placeholder="form.firstName" required />
-        <input type="text" name="prezime" placeholder="Prezime" data-i18n-placeholder="form.lastName" required />
+        <input type="text" name="ime" placeholder="First name" data-i18n-placeholder="form.firstName" required />
+        <input type="text" name="prezime" placeholder="Last name" data-i18n-placeholder="form.lastName" required />
       </div>
       <input type="email" name="email" placeholder="Email" data-i18n-placeholder="form.email" required />
-      <textarea name="poruka" placeholder="Vaša poruka..." data-i18n-placeholder="form.message" required></textarea>
+      <textarea name="poruka" placeholder="Your message..." data-i18n-placeholder="form.message" required></textarea>
       <div class="form-message" role="status" aria-live="polite"></div>
-      <button type="submit" class="submit-btn" data-i18n="form.submit">POŠALJI</button>
+      <button type="submit" class="submit-btn" data-i18n="form.submit">SEND</button>
     </form>
   </div>
 </section>
@@ -489,7 +569,7 @@
     <h2 data-i18n="cta.heading">Spend more time developing people. Spend less time on paperwork.</h2>
     <p data-i18n="cta.sub">Whether you lead a football academy, dance school, drama studio, music school or any other extracurricular organization - All Mighty Sync connects every part of your operation so you can focus on what actually matters.</p>
     <div class="cta-btns">
-      <a href="#contact-section" class="btn-primary btn-primary--cream" data-i18n="nav.contact">Contact</a>
+      <a href="#contact-section" class="btn-primary btn-primary--cream" data-i18n="nav.contact" data-track="contact_click" data-track-source="final_cta">Contact</a>
     </div>
   </div>
 </section>
@@ -500,7 +580,7 @@
     <div class="footer-cols">
       <div class="footer-col footer-col--brand">
         <div class="footer-brand-row">
-          <img src="images/logo.svg" alt="All Mighty Sync" class="footer-logo" />
+          <img src="images/logo.svg" alt="All Mighty Sync" class="footer-logo" width="375" height="375" loading="lazy" />
           <span class="footer-brand-name">All Mighty Sync</span>
         </div>
         <p class="footer-tagline" data-i18n="footer.tagline">Built for extracurricular organizations. Built in Sarajevo.</p>
@@ -508,8 +588,8 @@
       <div class="footer-col">
         <div class="footer-col-title" data-i18n="footer.col.product">Product</div>
         <ul class="footer-links">
-          <li><a href="#features-section" data-i18n="nav.features">Features</a></li>
-          <li><a href="#roles-section" data-i18n="nav.roles">Roles</a></li>
+          <li><a href="#features-section" data-i18n="nav.features" data-track="feature_navigation_click" data-track-source="footer">Features</a></li>
+          <li><a href="#roles-section" data-i18n="nav.roles" data-track="audience_navigation_click" data-track-source="footer">Roles</a></li>
           <li><a href="#get-started-section" data-i18n="nav.getStarted">Get Started</a></li>
           <li><a href="#faq-section" data-i18n="footer.faq">FAQ</a></li>
         </ul>
@@ -543,12 +623,12 @@
         <span class="partners-label" data-i18n="footer.supportedBy">Supported by</span>
         <a href="https://f787.ba/" target="_blank" rel="noopener noreferrer">
           <div class="partner-logo-dark" id="foundation-787-logo">
-            <img src="images/foundation-787-logo.svg" alt="Foundation 787" />
+            <img src="images/foundation-787-logo.svg" alt="Foundation 787" width="142" height="142" loading="lazy" />
           </div>
         </a>
         <a href="https://www.corebridge.ba/" target="_blank" rel="noopener noreferrer">
           <div class="partner-logo-dark" id="corebridge-logo">
-            <img src="images/corebridge-logo.svg" alt="Core Bridge" />
+            <img src="images/corebridge-logo.svg" alt="Core Bridge" width="651" height="400" loading="lazy" />
           </div>
         </a>
         <!-- INCONVENIENCE STORE - hidden until ready -->

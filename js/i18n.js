@@ -300,7 +300,7 @@
             "nav.contact": "CONTACT",
 
             "hero.title": 'Put the group chat on mute! <span class="accent">All your information is now in one place.</span>',
-            "hero.subtitle": "Manage your entire organization from one platform. Attendance, student development, scheduling, communication, payments and reporting - connected in one ecosystem built for extracurricular education.",
+            "hero.subtitle": "All Mighty Sync is club management software that brings attendance, student development, scheduling, communication, payments and reporting into one platform - built for sports clubs, academies and activity schools.",
             "hero.trust1": "✓ Attendance",
             "hero.trust2": "✓ Portfolios",
             "hero.trust3": "✓ Payments",

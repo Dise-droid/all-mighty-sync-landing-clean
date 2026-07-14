@@ -1,5 +1,17 @@
 (function () {
 
+  /* ===== ANALYTICS ===== */
+  function trackEvent(name, params) {
+    if (typeof window.gtag !== "function") return;
+    window.gtag("event", name, params || {});
+  }
+
+  document.querySelectorAll("[data-track]").forEach(function (el) {
+    el.addEventListener("click", function () {
+      trackEvent(el.dataset.track, { source: el.dataset.trackSource || undefined });
+    });
+  });
+
   /* ===== FAQ ACCORDION ===== */
   document.querySelectorAll(".faq-q").forEach(function (btn) {
     btn.addEventListener("click", function () {
@@ -126,6 +138,13 @@
     });
   });
 
+  let formStarted = false;
+  form.addEventListener("focusin", function () {
+    if (formStarted) return;
+    formStarted = true;
+    trackEvent("contact_form_start");
+  });
+
   form.addEventListener("submit", async function (e) {
     e.preventDefault();
     clearMessage();
@@ -169,13 +188,16 @@
       }
 
       showMessage("success", ui.success);
+      trackEvent("contact_form_submit");
       form.reset();
+      formStarted = false;
     } catch (err) {
       console.error("Contact form error:", err);
       showMessage(
           "error",
           (err && err.message) || ui.error
       );
+      trackEvent("contact_form_error");
     } finally {
       submitBtn.disabled = false;
       updateSubmitButtonLabel();
