@@ -1186,7 +1186,11 @@ a { text-decoration: none; }
   white-space: nowrap;
 }
 .footer-industries-list a:hover { color: var(--orange); }
-.footer-industries-list span { color: var(--border); }
+.footer-industries-list a:not(:last-child)::after {
+  content: "\00b7";
+  margin-left: 10px;
+  color: var(--border);
+}
 .footer-bottom {
   display: flex;
   justify-content: space-between;

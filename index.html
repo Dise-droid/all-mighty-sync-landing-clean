@@ -12,6 +12,11 @@
     connect-src 'self' https://api.web3forms.com https://www.google-analytics.com https://*.google-analytics.com https://*.analytics.google.com https://www.google.com;
   ">
 
+  <!-- Google Consent Mode defaults - placed first, before any stylesheet,
+       so this doesn't get stuck in the "wait for CSS" queue a script
+       placed after a blocking stylesheet is forced into. -->
+  <script src="js/ga-config.min.js?v=1"></script>
+
   <!-- Primary SEO -->
   <title>Club Management Software for Sports, Arts and Education | All Mighty Sync</title>
   <meta name="description" content="Manage attendance, scheduling, memberships, payments, parent communication and student progress in one platform built for sports clubs, academies and activity schools." />
@@ -50,10 +55,6 @@
   <link rel="manifest" href="site.webmanifest" />
 
   <link rel="stylesheet" href="css/style.css?v=25" />
-
-  <!-- Google tag (gtag.js) - Consent Mode v2: analytics denied by default, only
-       granted once the visitor accepts the cookie banner (js/consent.js). -->
-  <script src="js/ga-config.js?v=1"></script>
 
   <script type="application/ld+json">
   {
@@ -116,7 +117,7 @@
   <div class="container">
     <div class="hero-visual">
       <picture>
-        <source srcset="images/hero-phones-700.webp 750w, images/hero-phones.webp 1250w" sizes="(max-width: 900px) calc(100vw - 32px), 589px" type="image/webp" />
+        <source srcset="images/hero-phones-500.webp 450w, images/hero-phones-700.webp 750w, images/hero-phones.webp 1250w" sizes="(max-width: 900px) calc(100vw - 32px), 589px" type="image/webp" />
         <img src="images/hero-phones.png" alt="All Mighty Sync club management app showing QR attendance, organisation overview and reporting screens" width="1250" height="610" fetchpriority="high" />
       </picture>
       <div class="promo-badge" data-i18n="hero.promo">Sign up by July 31, 2026 and unlock all features for 3 months - completely free.</div>
@@ -230,7 +231,7 @@
     <div class="feature-block feature-block--img-right">
       <div class="feature-block-visual">
         <picture>
-          <source srcset="images/finance-screenshot-700.webp 800w, images/finance-screenshot.webp 1100w" sizes="(max-width: 900px) calc(100vw - 32px), 524px" type="image/webp" />
+          <source srcset="images/finance-screenshot-500.webp 500w, images/finance-screenshot-700.webp 800w, images/finance-screenshot.webp 1100w" sizes="(max-width: 900px) calc(100vw - 32px), 524px" type="image/webp" />
           <img class="finance-screenshot" src="images/finance-screenshot.png" alt="All Mighty Sync memberships and finance screens showing collected payments, unpaid members and revenue trend" width="1100" height="953" loading="lazy" />
         </picture>
       </div>
@@ -263,7 +264,7 @@
       </div>
       <div class="feature-block-visual">
         <picture>
-          <source srcset="images/notifications-hero-700.webp 800w, images/notifications-hero.webp 1100w" sizes="(max-width: 900px) calc(100vw - 32px), 524px" type="image/webp" />
+          <source srcset="images/notifications-hero-500.webp 500w, images/notifications-hero-700.webp 800w, images/notifications-hero.webp 1100w" sizes="(max-width: 900px) calc(100vw - 32px), 524px" type="image/webp" />
           <img class="notifications-screenshot" src="images/notifications-hero.png" alt="All Mighty Sync notifications, messaging and lock-screen alerts" width="1100" height="953" loading="lazy" />
         </picture>
       </div>
@@ -392,7 +393,7 @@
       </div>
       <div class="portfolio-cards">
         <picture>
-          <source srcset="images/portfolio-screenshot-700.webp 750w, images/portfolio-screenshot.webp 1250w" sizes="(max-width: 900px) calc(100vw - 32px), 611px" type="image/webp" />
+          <source srcset="images/portfolio-screenshot-500.webp 480w, images/portfolio-screenshot-700.webp 750w, images/portfolio-screenshot.webp 1250w" sizes="(max-width: 900px) calc(100vw - 32px), 611px" type="image/webp" />
           <img class="portfolio-screenshot" src="images/portfolio-screenshot.png" alt="All Mighty Sync student portfolio screens showing skill profile, coach insights and benchmark scale" width="1250" height="1083" loading="lazy" />
         </picture>
       </div>
@@ -622,22 +623,22 @@
     <div class="footer-industries">
       <div class="footer-col-title">Industries We Serve</div>
       <div class="footer-industries-list">
-        <a href="/football-club-management-software/">Football Clubs &amp; Academies</a><span>&middot;</span>
-        <a href="/dance-studio-management-software/">Dance Studios</a><span>&middot;</span>
-        <a href="/drama-school-management-software/">Drama Schools</a><span>&middot;</span>
-        <a href="/music-school-management-software/">Music Schools</a><span>&middot;</span>
-        <a href="/martial-arts-club-management-software/">Martial Arts Clubs</a><span>&middot;</span>
-        <a href="/language-school-management-software/">Language Schools</a><span>&middot;</span>
-        <a href="/art-school-management-software/">Art Schools</a><span>&middot;</span>
-        <a href="/coding-robotics-management-software/">Coding &amp; Robotics</a><span>&middot;</span>
-        <a href="/basketball-club-management-software/">Basketball Clubs</a><span>&middot;</span>
-        <a href="/volleyball-club-management-software/">Volleyball Clubs</a><span>&middot;</span>
-        <a href="/tennis-academy-management-software/">Tennis Academies</a><span>&middot;</span>
-        <a href="/swimming-club-management-software/">Swimming Clubs</a><span>&middot;</span>
-        <a href="/gymnastics-club-management-software/">Gymnastics Clubs</a><span>&middot;</span>
-        <a href="/tutoring-center-management-software/">Tutoring Centers</a><span>&middot;</span>
-        <a href="/after-school-activity-management-software/">After-School Programs</a><span>&middot;</span>
-        <a href="/childrens-activity-center-management-software/">Children's Activity Centers</a><span>&middot;</span>
+        <a href="/football-club-management-software/">Football Clubs &amp; Academies</a>
+        <a href="/dance-studio-management-software/">Dance Studios</a>
+        <a href="/drama-school-management-software/">Drama Schools</a>
+        <a href="/music-school-management-software/">Music Schools</a>
+        <a href="/martial-arts-club-management-software/">Martial Arts Clubs</a>
+        <a href="/language-school-management-software/">Language Schools</a>
+        <a href="/art-school-management-software/">Art Schools</a>
+        <a href="/coding-robotics-management-software/">Coding &amp; Robotics</a>
+        <a href="/basketball-club-management-software/">Basketball Clubs</a>
+        <a href="/volleyball-club-management-software/">Volleyball Clubs</a>
+        <a href="/tennis-academy-management-software/">Tennis Academies</a>
+        <a href="/swimming-club-management-software/">Swimming Clubs</a>
+        <a href="/gymnastics-club-management-software/">Gymnastics Clubs</a>
+        <a href="/tutoring-center-management-software/">Tutoring Centers</a>
+        <a href="/after-school-activity-management-software/">After-School Programs</a>
+        <a href="/childrens-activity-center-management-software/">Children's Activity Centers</a>
         <a href="/multi-sport-academy-management-software/">Multi-Sport Academies</a>
       </div>
     </div>
@@ -685,9 +686,9 @@
   </div>
 </div>
 
-<script src="js/i18n.js?v=24" defer></script>
-<script src="js/industry.js?v=1" defer></script>
-<script src="js/consent.js?v=1" defer></script>
-<script src="js/script.js?v=17" defer></script>
+<script src="js/i18n.min.js?v=24" defer></script>
+<script src="js/industry.min.js?v=1" defer></script>
+<script src="js/consent.min.js?v=1" defer></script>
+<script src="js/script.min.js?v=17" defer></script>
 </body>
 </html>
