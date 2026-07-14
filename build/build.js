@@ -93,7 +93,7 @@ function renderPage(page) {
     style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
     font-src 'self' https://fonts.gstatic.com;
     img-src 'self' data:;
-    connect-src 'self' https://api.web3forms.com https://www.google-analytics.com https://*.google-analytics.com https://*.analytics.google.com;
+    connect-src 'self' https://api.web3forms.com https://www.google-analytics.com https://*.google-analytics.com https://*.analytics.google.com https://www.google.com;
   ">
 
   <title>${escapeHtml(page.title)}</title>
@@ -130,13 +130,8 @@ function renderPage(page) {
 
   <link rel="stylesheet" href="/css/style.css?v=25" />
 
+  <script src="/js/ga-config.js?v=1"></script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-NR4ZNJ0D7Y"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-NR4ZNJ0D7Y');
-  </script>
 
   <script type="application/ld+json">
 ${JSON.stringify(jsonLd, null, 2)}
@@ -239,11 +234,23 @@ ${JSON.stringify(jsonLd, null, 2)}
       </div>
       <div class="footer-bottom-right">
         <span class="copyright">&copy; 2026 All Mighty Sync. All rights reserved.</span>
+        <a href="/privacy-policy/" style="font-size: 13px; color: var(--muted);">Privacy Policy</a>
       </div>
     </div>
   </div>
 </footer>
 
+<div id="consent-banner" class="consent-banner" hidden>
+  <div class="consent-banner-text">
+    We use analytics cookies to understand how visitors use this site. See our <a href="/privacy-policy/">Privacy Policy</a>.
+  </div>
+  <div class="consent-banner-actions">
+    <button type="button" id="consent-reject" class="consent-btn consent-btn--reject">Reject</button>
+    <button type="button" id="consent-accept" class="consent-btn consent-btn--accept">Accept</button>
+  </div>
+</div>
+
+<script src="/js/consent.js?v=1"></script>
 <script src="/js/script.js?v=17"></script>
 </body>
 </html>
