@@ -122,7 +122,6 @@ function renderPage(page) {
   <link id="font-css" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" media="print">
   <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"></noscript>
 
-  <link rel="icon" type="image/svg+xml" href="/images/logo.svg" />
   <link rel="icon" type="image/x-icon" href="/favicon.ico" />
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png" />
   <link rel="icon" type="image/png" sizes="192x192" href="/images/icon-192.png" />
