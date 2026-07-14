@@ -119,7 +119,8 @@ function renderPage(page) {
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link id="font-css" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" media="print">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"></noscript>
 
   <link rel="icon" type="image/svg+xml" href="/images/logo.svg" />
   <link rel="icon" type="image/x-icon" href="/favicon.ico" />
@@ -250,8 +251,8 @@ ${JSON.stringify(jsonLd, null, 2)}
   </div>
 </div>
 
-<script src="/js/consent.js?v=1"></script>
-<script src="/js/script.js?v=17"></script>
+<script src="/js/consent.js?v=1" defer></script>
+<script src="/js/script.js?v=17" defer></script>
 </body>
 </html>
 `;

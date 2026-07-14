@@ -1,5 +1,19 @@
 (function () {
 
+  /* ===== NON-BLOCKING GOOGLE FONTS =====
+     font-css link loads with media="print" so it doesn't block first
+     render; switch it to media="all" once it's actually loaded. */
+  var fontLink = document.getElementById("font-css");
+  if (fontLink) {
+    if (fontLink.sheet) {
+      fontLink.media = "all";
+    } else {
+      fontLink.addEventListener("load", function () {
+        fontLink.media = "all";
+      });
+    }
+  }
+
   /* ===== ANALYTICS ===== */
   function trackEvent(name, params) {
     if (typeof window.gtag !== "function") return;
