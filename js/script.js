@@ -55,11 +55,13 @@
       const disc = tab.dataset.disc;
       document.querySelectorAll(".disc-tab").forEach(function (t) {
         t.classList.remove("active");
+        t.setAttribute("aria-selected", "false");
       });
       document.querySelectorAll(".disc-panel").forEach(function (p) {
         p.classList.remove("active");
       });
       tab.classList.add("active");
+      tab.setAttribute("aria-selected", "true");
       const panel = document.querySelector(".disc-panel[data-disc='" + disc + "']");
       if (panel) panel.classList.add("active");
     });

@@ -136,9 +136,13 @@
     var panel = document.querySelector('.disc-panel[data-disc="' + key + '"]');
     if (!tab || !panel) return;
 
-    document.querySelectorAll(".disc-tab").forEach(function (t) { t.classList.remove("active"); });
+    document.querySelectorAll(".disc-tab").forEach(function (t) {
+      t.classList.remove("active");
+      t.setAttribute("aria-selected", "false");
+    });
     document.querySelectorAll(".disc-panel").forEach(function (p) { p.classList.remove("active"); });
     tab.classList.add("active");
+    tab.setAttribute("aria-selected", "true");
     panel.classList.add("active");
   }
 
