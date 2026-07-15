@@ -96,7 +96,7 @@ function renderPage(page) {
     connect-src 'self' https://api.web3forms.com https://www.google-analytics.com https://*.google-analytics.com https://*.analytics.google.com https://www.google.com;
   ">
 
-  <script src="/js/ga-config.min.js?v=1"></script>
+  <script src="/js/ga-config.min.js?v=1" defer></script>
 
   <title>${escapeHtml(page.title)}</title>
   <meta name="description" content="${escapeHtml(page.metaDescription)}" />
