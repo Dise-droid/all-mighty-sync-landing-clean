@@ -169,12 +169,17 @@ a { text-decoration: none; }
   gap: 12px;
   order: 1;
 }
-.hero-visual img {
+.hero-visual picture {
+  display: block;
   width: 130%;
   max-width: none;
-  height: auto;
   transform: translateX(-6%);
   filter: drop-shadow(0 24px 40px rgba(0,0,0,0.15));
+}
+.hero-visual picture img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 .promo-badge {
   display: inline-flex;
@@ -1247,7 +1252,7 @@ a { text-decoration: none; }
   .hero-sub { margin-left: auto; margin-right: auto; }
   .trust-row { justify-content: center; }
   .store-buttons { justify-content: center; }
-  .hero-visual img { width: 90%; max-width: 500px; transform: none; }
+  .hero-visual picture { width: 90%; max-width: 500px; transform: none; }
   .promo-badge { transform: none; }
   .feature-block { grid-template-columns: 1fr; gap: 32px; }
   .feature-block--img-left .feature-block-visual,
