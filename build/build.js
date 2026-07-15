@@ -255,7 +255,7 @@ ${JSON.stringify(jsonLd, null, 2)}
       </div>
       <div class="footer-bottom-right">
         <span class="copyright">&copy; 2026 All Mighty Sync. All rights reserved.</span>
-        <a href="/privacy-policy/" style="font-size: 13px; color: var(--muted);">Privacy Policy</a>
+        <a href="/privacy-policy/" style="font-size: 13px; color: #3D3D3D;">Privacy Policy</a>
       </div>
     </div>
   </div>

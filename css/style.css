@@ -3,6 +3,12 @@
   --cream:        #FEFBF0;
   --orange:       #E88E24;
   --orange-light: #F6BF7F;
+  /* Darker than --orange specifically for white-text buttons - the base
+     orange only gives ~2.5:1 contrast with white, well under WCAG AA's
+     4.5:1. This gives ~5.1:1. Decorative/accent uses of --orange (text,
+     badges, tab highlights) are untouched. */
+  --orange-btn:      #A25E11;
+  --orange-btn-hover: #8A4E0D;
   --indigo:       #2D2D8C;
   --purple:       #7B7BD6;
   --purple-light: #B5BAEA;
@@ -144,7 +150,7 @@ a { text-decoration: none; }
   font-family: inherit;
 }
 .lang-btn:hover { color: var(--ink); background: rgba(0,0,0,0.07); }
-.lang-btn.active { background: var(--orange); color: #fff; }
+.lang-btn.active { background: var(--orange-btn); color: #fff; }
 
 /* ========== HERO ========== */
 .hero { padding: 24px 0 48px; }
@@ -309,14 +315,14 @@ a { text-decoration: none; }
   align-items: center;
   height: 48px;
   padding: 0 22px;
-  background: var(--orange);
+  background: var(--orange-btn);
   color: #fff;
   font-size: 14px;
   font-weight: 700;
   border-radius: 10px;
   transition: background 0.2s, transform 0.15s;
 }
-.btn-demo:hover { background: #cf7c1c; transform: translateY(-1px); }
+.btn-demo:hover { background: var(--orange-btn-hover); transform: translateY(-1px); }
 
 /* ========== STORE BUTTONS ========== */
 .store-btn {
@@ -889,14 +895,14 @@ a { text-decoration: none; }
   align-items: center;
   height: 50px;
   padding: 0 28px;
-  background: var(--orange);
+  background: var(--orange-btn);
   color: #fff;
   font-size: 15px;
   font-weight: 700;
   border-radius: 10px;
   transition: background 0.2s, transform 0.15s;
 }
-.btn-primary:hover { background: #cf7c1c; transform: translateY(-1px); }
+.btn-primary:hover { background: var(--orange-btn-hover); transform: translateY(-1px); }
 .btn-primary--cream { background: rgba(254, 251, 240, 0.92); color: var(--indigo); }
 .btn-primary--cream:hover { background: rgba(254, 251, 240, 1); }
 
@@ -1093,7 +1099,7 @@ a { text-decoration: none; }
 }
 .contact-form textarea { min-height: 120px; resize: vertical; }
 .submit-btn {
-  background: var(--orange);
+  background: var(--orange-btn);
   color: #fff;
   border: none;
   padding: 14px 24px;
@@ -1105,7 +1111,7 @@ a { text-decoration: none; }
   transition: background 0.2s, transform 0.1s;
   font-family: inherit;
 }
-.submit-btn:hover:not(:disabled) { background: #cf7c1c; }
+.submit-btn:hover:not(:disabled) { background: var(--orange-btn-hover); }
 .submit-btn:disabled { opacity: 0.7; cursor: not-allowed; }
 .form-message { font-size: 14px; padding: 10px 14px; border-radius: 8px; display: none; }
 .form-message.success { display: block; background: #e7f7ec; color: #1d6b34; }
@@ -1302,7 +1308,7 @@ a { text-decoration: none; }
 .consent-banner[hidden] { display: none; }
 .consent-banner-text {
   font-size: 14px;
-  color: var(--muted);
+  color: #3D3D3D;
   line-height: 1.6;
   max-width: 640px;
 }
@@ -1323,8 +1329,8 @@ a { text-decoration: none; }
 }
 .consent-btn--reject { background: var(--white); color: var(--ink); }
 .consent-btn--reject:hover { background: var(--cream); }
-.consent-btn--accept { background: var(--orange); color: var(--white); border-color: var(--orange); }
-.consent-btn--accept:hover { background: #cf7c1c; }
+.consent-btn--accept { background: var(--orange-btn); color: var(--white); border-color: var(--orange-btn); }
+.consent-btn--accept:hover { background: var(--orange-btn-hover); }
 
 @media (max-width: 700px) {
   .consent-banner { flex-direction: column; align-items: stretch; text-align: center; }
