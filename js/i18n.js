@@ -16,10 +16,11 @@
             "hero.trust6": "✓ Izvještaji",
             "hero.promo": "Prijavite se do 31.07.2026. i otključajte sve funkcije na 3 mjeseca - potpuno besplatno.",
 
-            "access.headline": "AMS je uživo 🎉",
-            "access.main": "Pristup aplikaciji moguć je isključivo putem pozivnice vaše škole, kluba ili organizacije.",
-            "access.sub": "Kada vaša organizacija aktivira AMS, dobit ćete pozivnicu i upute za pristup platformi.",
-            "access.note": "Samostalna registracija trenutno nije dostupna.",
+            "access.headline": "All Mighty Sync je dostupan na prodavnicama aplikacija!",
+            "access.org.title": "Vodite školu, klub ili organizaciju?",
+            "access.org.body": "Kontaktirajte nas i aktiviramo AMS za vašu organizaciju.",
+            "access.member.title": "Nastavnik, roditelj ili polaznik ste?",
+            "access.member.body": "Ako ste nastavnik, roditelj ili polaznik zatražite pozivnicu od voditelja vaše škole.",
             "access.cta": "Zatražite Demo",
 
             "problem.label": "PROBLEM",
@@ -302,10 +303,11 @@
             "hero.trust6": "✓ Reports",
             "hero.promo": "Sign up by July 31, 2026 and unlock all features for 3 months - completely free.",
 
-            "access.headline": "AMS is live 🎉",
-            "access.main": "Access to the app is available exclusively through an invitation from your school, club or organization.",
-            "access.sub": "Once your organization activates AMS, you'll receive an invitation and instructions to access the platform.",
-            "access.note": "Self-registration is not currently available.",
+            "access.headline": "All Mighty Sync is available on stores!",
+            "access.org.title": "Do you lead a school, club or organization?",
+            "access.org.body": "Contact us and we'll activate AMS for your organization.",
+            "access.member.title": "Are you a teacher, parent or student?",
+            "access.member.body": "Ask your school's administrator for an invitation to join.",
             "access.cta": "Request a Demo",
 
             "problem.label": "THE PROBLEM",
@@ -588,10 +590,11 @@
             "hero.trust6": "✓ Berichte",
             "hero.promo": "Melden Sie sich bis zum 31.07.2026 an und schalten Sie alle Funktionen 3 Monate lang kostenlos frei.",
 
-            "access.headline": "AMS ist live 🎉",
-            "access.main": "Der Zugang zur App ist ausschließlich über eine Einladung Ihrer Schule, Ihres Vereins oder Ihrer Organisation möglich.",
-            "access.sub": "Sobald Ihre Organisation AMS aktiviert, erhalten Sie eine Einladung und Anleitung für den Zugang zur Plattform.",
-            "access.note": "Eine eigenständige Registrierung ist derzeit nicht möglich.",
+            "access.headline": "All Mighty Sync ist in den Stores erhältlich!",
+            "access.org.title": "Leiten Sie eine Schule, einen Verein oder eine Organisation?",
+            "access.org.body": "Kontaktieren Sie uns und wir aktivieren AMS für Ihre Organisation.",
+            "access.member.title": "Sind Sie Lehrkraft, Elternteil oder Schüler/in?",
+            "access.member.body": "Bitten Sie die Verwaltung Ihrer Schule um eine Einladung.",
             "access.cta": "Demo anfordern",
 
             "problem.label": "DAS PROBLEM",

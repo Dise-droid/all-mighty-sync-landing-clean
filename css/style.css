@@ -232,37 +232,49 @@ a { text-decoration: none; }
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  max-width: 480px;
+  max-width: 560px;
 }
 .access-badge {
   display: inline-flex;
   align-items: center;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 700;
+  line-height: 1.4;
   color: var(--success);
   background: rgba(76,175,130,0.1);
-  padding: 5px 12px;
-  border-radius: 999px;
-  margin-bottom: 10px;
+  padding: 8px 14px;
+  border-radius: 12px;
+  margin-bottom: 16px;
 }
-.access-main {
-  font-size: 16px;
-  font-weight: 600;
-  color: var(--ink);
-  line-height: 1.5;
-  margin-bottom: 8px;
+.access-split {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
 }
-.access-sub {
+.access-col {
+  flex: 1 1 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.access-col + .access-col {
+  padding-left: 24px;
+  border-left: 1px solid var(--border);
+}
+.access-col-title {
   font-size: 14px;
+  font-weight: 700;
+  color: var(--ink);
+  line-height: 1.4;
+  margin-bottom: 6px;
+}
+.access-col-body {
+  font-size: 13px;
   color: var(--muted);
-  line-height: 1.6;
-  margin-bottom: 8px;
+  line-height: 1.55;
+  margin-bottom: 14px;
 }
-.access-note {
-  font-size: 12px;
-  color: var(--sub);
-  margin-bottom: 18px;
-}
+.access-col .btn-demo { height: 40px; padding: 0 18px; font-size: 13px; }
 .btn-demo {
   display: inline-flex;
   align-items: center;
@@ -1130,6 +1142,8 @@ a { text-decoration: none; }
   .hero-sub { margin-left: auto; margin-right: auto; }
   .trust-row { justify-content: center; }
   .access-notice { align-items: center; margin-left: auto; margin-right: auto; }
+  .access-split { justify-content: center; }
+  .access-col { align-items: center; text-align: center; }
   .hero-visual picture { width: 90%; max-width: 500px; transform: none; }
   .promo-badge { transform: none; }
   .feature-block { grid-template-columns: 1fr; gap: 32px; }
@@ -1165,6 +1179,10 @@ a { text-decoration: none; }
   .comparison-table th, .comparison-table td { padding: 10px 12px; }
   .container { padding: 0 16px; }
   .faq-cols { grid-template-columns: 1fr; gap: 0; }
+}
+
+@media (max-width: 560px) {
+  .access-col + .access-col { padding-left: 0; padding-top: 20px; margin-top: 4px; border-left: none; border-top: 1px solid var(--border); }
 }
 
 /* ===== COOKIE CONSENT BANNER ===== */
