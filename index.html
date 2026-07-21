@@ -55,7 +55,7 @@
   <link rel="icon" type="image/png" sizes="512x512" href="images/icon-512.png" />
   <link rel="manifest" href="site.webmanifest" />
 
-  <link rel="stylesheet" href="css/style.css?v=25" />
+  <link rel="stylesheet" href="css/style.css?v=26" />
 
   <script type="application/ld+json">
   {
@@ -134,37 +134,12 @@
         <span class="trust-item" data-i18n="hero.trust5">✓ Notifications</span>
         <span class="trust-item" data-i18n="hero.trust6">✓ Reports</span>
       </div>
-      <div class="store-buttons">
-        <div class="store-group">
-          <div class="launch-countdown" data-launch="2026-07-20T00:00:00+02:00">
-            <span class="countdown-label" data-i18n="countdown.label">Live in</span>
-            <div class="countdown-units">
-              <div class="countdown-unit"><span class="countdown-num" data-cd="days">00</span><span class="countdown-unit-label" data-i18n="countdown.days">days</span></div>
-              <span class="countdown-sep">:</span>
-              <div class="countdown-unit"><span class="countdown-num" data-cd="hours">00</span><span class="countdown-unit-label" data-i18n="countdown.hours">hrs</span></div>
-              <span class="countdown-sep">:</span>
-              <div class="countdown-unit"><span class="countdown-num" data-cd="minutes">00</span><span class="countdown-unit-label" data-i18n="countdown.minutes">min</span></div>
-              <span class="countdown-sep">:</span>
-              <div class="countdown-unit"><span class="countdown-num" data-cd="seconds">00</span><span class="countdown-unit-label" data-i18n="countdown.seconds">sec</span></div>
-            </div>
-            <span class="countdown-live-label" data-i18n="countdown.liveLabel">We're live! 🎉</span>
-          </div>
-          <span class="store-soon" data-i18n="hero.comingSoon">Soon on:</span>
-          <div class="store-btns-row">
-            <!-- APP STORE LINK - re-enable when ready: href="https://apps.apple.com/ba/app/all-mighty-sync/id6776313753" -->
-            <span class="store-btn is-disabled" aria-label="App Store" aria-disabled="true">
-              <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24" aria-hidden="true"><path d="M17.564 12.713c-.024-2.43 1.984-3.598 2.075-3.654-1.131-1.654-2.892-1.881-3.518-1.907-1.498-.151-2.924.882-3.687.882-.762 0-1.937-.86-3.187-.836-1.641.024-3.155.953-4.001 2.42-1.704 2.953-.436 7.32 1.225 9.715.81 1.171 1.776 2.488 3.044 2.441 1.222-.05 1.683-.79 3.16-.79 1.476 0 1.893.79 3.187.764 1.316-.024 2.149-1.196 2.953-2.371.93-1.36 1.314-2.677 1.337-2.745-.029-.012-2.566-.985-2.588-3.919zM15.18 5.475c.677-.82 1.131-1.96.998-3.092-.965.039-2.137.643-2.836 1.461-.626.726-1.171 1.886-1.024 2.998 1.078.082 2.18-.547 2.862-1.367z"/></svg>
-              <span><span class="small" data-i18n="store.apple.small">Download on</span><span class="big" data-i18n="store.apple.big">App Store</span></span>
-              <a href="#contact-section" class="store-tooltip" data-i18n="store.tooltip" data-track="request_demo_click" data-track-source="store_tooltip">Or request a demo</a>
-            </span>
-            <span class="store-btn is-disabled" aria-label="Google Play" aria-disabled="true">
-              <svg viewBox="0 0 512 512" fill="currentColor" width="24" height="24" aria-hidden="true"><path d="M325.3 234.3 104.6 13l280.8 161.2-60.1 60.1zM47 0c-13 6.8-21 19.4-21 35.7v440.6c0 16.3 8 28.9 21 35.7l256.4-256L47 0zm425.2 225.6-58.9-34.1-65.7 64.5 65.7 64.5 60.1-34.1c18-14.3 18-46.5-1.2-60.8zM104.6 499 385.4 337.8l-60.1-60.1L104.6 499z"/></svg>
-              <span><span class="small" data-i18n="store.google.small">Download on</span><span class="big" data-i18n="store.google.big">Google Play</span></span>
-              <a href="#contact-section" class="store-tooltip" data-i18n="store.tooltip" data-track="request_demo_click" data-track-source="store_tooltip">Or request a demo</a>
-            </span>
-          </div>
-        </div>
-        <a href="#contact-section" class="btn-demo" data-i18n="hero.requestDemo" data-track="request_demo_click" data-track-source="hero">Request Demo</a>
+      <div class="access-notice">
+        <span class="access-badge" data-i18n="access.headline">AMS je uživo 🎉</span>
+        <p class="access-main" data-i18n="access.main">Pristup aplikaciji moguć je isključivo putem pozivnice vaše škole, kluba ili organizacije.</p>
+        <p class="access-sub" data-i18n="access.sub">Kada vaša organizacija aktivira AMS, dobit ćete pozivnicu i upute za pristup platformi.</p>
+        <p class="access-note" data-i18n="access.note">Samostalna registracija trenutno nije dostupna.</p>
+        <a href="#contact-section" class="btn-demo" data-i18n="access.cta" data-track="request_demo_click" data-track-source="hero">Zatražite Demo</a>
       </div>
     </div>
   </div>
@@ -606,19 +581,9 @@
         </ul>
       </div>
       <div class="footer-col">
-        <div class="footer-col-title" data-i18n="footer.col.download">Download</div>
-        <div class="footer-store-btns">
-          <span class="store-btn store-btn--small is-disabled" aria-disabled="true">
-            <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16" aria-hidden="true"><path d="M17.564 12.713c-.024-2.43 1.984-3.598 2.075-3.654-1.131-1.654-2.892-1.881-3.518-1.907-1.498-.151-2.924.882-3.687.882-.762 0-1.937-.86-3.187-.836-1.641.024-3.155.953-4.001 2.42-1.704 2.953-.436 7.32 1.225 9.715.81 1.171 1.776 2.488 3.044 2.441 1.222-.05 1.683-.79 3.16-.79 1.476 0 1.893.79 3.187.764 1.316-.024 2.149-1.196 2.953-2.371.93-1.36 1.314-2.677 1.337-2.745-.029-.012-2.566-.985-2.588-3.919zM15.18 5.475c.677-.82 1.131-1.96.998-3.092-.965.039-2.137.643-2.836 1.461-.626.726-1.171 1.886-1.024 2.998 1.078.082 2.18-.547 2.862-1.367z"/></svg>
-            <span><span class="small" data-i18n="store.apple.small">Download on</span><span class="big" data-i18n="store.apple.big">App Store</span></span>
-            <a href="#contact-section" class="store-tooltip" data-i18n="store.tooltip">Or request a demo</a>
-          </span>
-          <span class="store-btn store-btn--small is-disabled" aria-disabled="true">
-            <svg viewBox="0 0 512 512" fill="currentColor" width="16" height="16" aria-hidden="true"><path d="M325.3 234.3 104.6 13l280.8 161.2-60.1 60.1zM47 0c-13 6.8-21 19.4-21 35.7v440.6c0 16.3 8 28.9 21 35.7l256.4-256L47 0zm425.2 225.6-58.9-34.1-65.7 64.5 65.7 64.5 60.1-34.1c18-14.3 18-46.5-1.2-60.8zM104.6 499 385.4 337.8l-60.1-60.1L104.6 499z"/></svg>
-            <span><span class="small" data-i18n="store.google.small">Download on</span><span class="big" data-i18n="store.google.big">Google Play</span></span>
-            <a href="#contact-section" class="store-tooltip" data-i18n="store.tooltip">Or request a demo</a>
-          </span>
-        </div>
+        <div class="footer-col-title" data-i18n="footer.col.access">Access</div>
+        <p class="footer-access-note" data-i18n="footer.access.note">Available by invitation from your organization.</p>
+        <a href="#contact-section" class="footer-access-cta" data-i18n="access.cta" data-track="request_demo_click" data-track-source="footer">Zatražite Demo</a>
       </div>
     </div>
     <div class="footer-industries">
@@ -687,9 +652,9 @@
   </div>
 </div>
 
-<script src="js/i18n.min.js?v=24" defer></script>
+<script src="js/i18n.min.js?v=25" defer></script>
 <script src="js/industry.min.js?v=1" defer></script>
 <script src="js/consent.min.js?v=1" defer></script>
-<script src="js/script.min.js?v=17" defer></script>
+<script src="js/script.min.js?v=18" defer></script>
 </body>
 </html>
